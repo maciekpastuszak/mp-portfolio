@@ -1,10 +1,19 @@
-import { Hero } from '@/components'
-import Image from 'next/image'
+import React from 'react';
 
-export default function Home() {
+import Hero from '@/components/Hero/Hero';
+import About from '@/components/About/About';
+import Portfolio from '@/components/Portfolio/Portfolio';
+import Contact from '@/components/Contact/Contact';
+
+const HomePage = () => {
   return (
-    <main className="overflow-hidden">
+    <div>
       <Hero />
-    </main>
-  )
-}
+      <About />
+      <Portfolio />
+      <Contact />
+    </div>
+  );
+};
+
+export default HomePage;
