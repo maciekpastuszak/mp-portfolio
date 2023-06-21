@@ -1,14 +1,18 @@
 import React from 'react'
-import Navlink from './Navlink'
+import NavItem from './NavItem'
 
+const navItems = ["Home", "About Me", "Portfolio", "Contact"]
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 flex items-center justify-between w-full p-4 bg-primary-dark text-secondary-blue z-10">
         <div className="flex w-1/2 items-center ms-6">
             <ul className="flex flex-row justify-start w-full">
-                {navlinks.map((item, index) => {
-                    <Navlink />
-                })}
+                {navItems.map((title, index) => (
+                    <NavItem 
+                        key={index} 
+                        title={title} 
+                    />
+                ))}
                 {/* <li>Home</li>
                 <li>About me</li>
                 <li>Portfolio</li>
