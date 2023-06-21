@@ -1,6 +1,10 @@
 import React from 'react'
 
-const NavItem = ({ title }) => {
+interface NavItemProps {
+  title: string;
+}
+
+const NavItem: React.FC<NavItemProps> = ({ title }) => {
   return (
     <div>{title}</div>
   )
