@@ -1,11 +1,8 @@
 import React from 'react'
-import Navbar from '../Navbar'
-
 
 const Hero = () => {
   return (
     <section>
-      <Navbar />
       <div className="min-h-screen flex items-center justify-end bg-primary-dark text-secondary-blue">
         <div className="max-w-screen-lg px-4 py-8">
           <div className="text-center">
