@@ -1,9 +1,10 @@
 import React from 'react';
 import NavItem from './NavItem';
-import HomeIcon from '../public/home-icon.svg';
+import Image from 'next/image';
+import homeIcon from "../public/home-icon.svg";
+
 
 const navItems = [
-    { label: "Home", icon: <HomeIcon /> },
     "About", 
     "Portfolio", 
     "Contact"]
@@ -12,10 +13,14 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 flex items-center justify-between w-full p-4 bg-primary-dark text-secondary-blue z-10">
         <div className="flex w-1/2 items-center ms-6">
             <ul className="flex flex-row justify-between w-full">
-                {navItems.map((item, index) => (
+                <Image 
+                    src={homeIcon}
+                    alt="Home"
+                />
+                {navItems.map((label, index) => (
                     <NavItem 
                         key={index} 
-                        label={typeof item === 'object' ? item.label : item}
+                        label={label} 
                     />
                 ))}
             </ul>
