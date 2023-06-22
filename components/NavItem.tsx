@@ -6,9 +6,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ label }) => {
   return (
-    <div className="mx-4 flex-nowrap">
-      <p>{label}</p>
-    </div>
+    <li className="mx-4 flex-nowrap">{label}</li>
   )
 }
 
