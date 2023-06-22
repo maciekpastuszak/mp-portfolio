@@ -1,13 +1,13 @@
 import React from 'react'
 
 interface NavItemProps {
-  title: string;
+  label: string;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ title }) => {
+const NavItem: React.FC<NavItemProps> = ({ label }) => {
   return (
     <div className="mx-4 flex-nowrap">
-      <p>{title}</p>
+      <p>{label}</p>
     </div>
   )
 }
