@@ -2,7 +2,7 @@ import React from 'react';
 import NavItem from './NavItem';
 import Image from 'next/image';
 import homeIcon from "../public/home-icon.svg";
-
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const navItems = [
     "About", 
@@ -33,8 +33,8 @@ const Navbar = () => {
                 <div className="flex items-center">
                     {/* SOCIAL MEDIA */}
                     <ul className="flex flex-row">
-                        <li>G</li>
-                        <li>L</li>
+                        <li className="text-secondary-blue ps-4"><BsGithub /></li>
+                        <li className="text-secondary-blue ps-4"><BsLinkedin /></li>
                     </ul>
                 </div>
                 </div>
