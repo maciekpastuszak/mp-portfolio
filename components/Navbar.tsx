@@ -8,6 +8,7 @@ const navItems = [
     "About", 
     "Portfolio", 
     "Contact"]
+    
 const Navbar = () => {
   return (
     <nav>

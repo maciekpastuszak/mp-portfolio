@@ -6,7 +6,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ label }) => {
   return (
-    <div className="text-secondary-blue">{label}</div>
+    <div className="text-secondary-blue px-2">{label}</div>
   )
 }
 
