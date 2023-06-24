@@ -7,13 +7,11 @@ const Hero = () => {
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue">
           {/* <div className="max-w-screen-lg px-4 py-8"> */}
             <div className="text-end">
-              <h1 className="text-4xl font-bold mb-4">
-              <p>Hi there!</p>
-              <p>My name is Maciek</p>
-              <p>I’m a web developer</p>
-
-
-              </h1>
+              <div>
+                <p className="font-light text-6xl">Hi there!</p>
+                <p className="font-light text-4xl">My name is Maciek</p>
+                <p className="font-light text-3xl">I’m a web developer</p>
+              </div>
               {/* move to next page img */}
             </div>
           {/* </div> */}
