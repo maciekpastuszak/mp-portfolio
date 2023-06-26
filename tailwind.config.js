@@ -31,6 +31,9 @@ module.exports = {
       },
       backgroundImage: {
         'hero-bg': "url('/hero-bg.jpg')"
+      },
+      dropShadow: {
+        "md" : "0 0 5px rgb(163,251,239)"
       }
     },
   },
