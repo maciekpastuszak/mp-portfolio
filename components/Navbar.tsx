@@ -20,6 +20,7 @@ const Navbar = () => {
                     alt="Home"
                     height={25}
                     width={25}
+                    className="hover:drop-shadow-md cursor-pointer"
                 />
                 <div className="flex items-center justify-between gap-8 text-sm">
                     {/* NAV LINKS */}
@@ -34,8 +35,16 @@ const Navbar = () => {
                 <div className="flex items-center">
                     {/* SOCIAL MEDIA */}
                     <ul className="flex flex-row">
-                        <li className="text-secondary-blue ps-4"><BsGithub /></li>
-                        <li className="text-secondary-blue ps-4"><BsLinkedin /></li>
+                        <li className="
+                        text-secondary-blue 
+                        ps-4 
+                        hover:drop-shadow-md 
+                        cursor-pointer"><BsGithub /></li>
+                        <li className="
+                        text-secondary-blue 
+                        ps-4 
+                        hover:drop-shadow-md 
+                        cursor-pointer"><BsLinkedin /></li>
                     </ul>
                 </div>
                 </div>
