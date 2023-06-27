@@ -14,7 +14,7 @@ const navItems = [
     
 const Navbar = () => {
 
-    const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav>
@@ -60,22 +60,21 @@ const Navbar = () => {
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
                 <div className="text-secondary-blue items-center cursor-pointer">
                     {toggleMenu ? (
-                        <div className="
-                        fixed 
-                        right-0 
-                        bottom-0 
-                        z-40 
-                        h-full 
+                        <div className=
+                        {`${toggleMenu ? 'slideIn' : ''} 
+                        fixed right-[-200px]
+                        bottom-0
+                        z-40
+                        h-full
                         w-[200px]
+                        overflow-hidden
                         bg-gray-500
                         rounded-md
                         bg-clip-padding
                         backdrop-filter
                         backdrop-blur-md
-                        bg-opacity-20
-                        border
-                        border-gray-100
-                        ">
+                        bg-opacity-20 border
+                        border-gray-100`}>
                             <div className="">
                                 <MdClose size={35} onClick={() => setToggleMenu((prev) => !prev)} />
                             </div>

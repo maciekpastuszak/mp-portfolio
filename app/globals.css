@@ -37,3 +37,7 @@
 }
 /* END: General styles */
 
+.slideIn {
+  transition: transform 1s ease-out;
+  transform: translateX(-200px);
+}
