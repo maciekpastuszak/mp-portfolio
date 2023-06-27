@@ -60,31 +60,15 @@ const Navbar = () => {
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
                 <div className="text-secondary-blue items-center cursor-pointer">
                     {toggleMenu ? (
-                        <div className="
-                        fixed 
-                        right-0 
-                        bottom-0 
-                        z-40 
-                        h-full 
-                        w-[200px]
-                      bg-accent-yellow-300 
-                        opacity-80"
-                        >
-                              <MdClose 
-                            size={35}
-                            onClick={() => setToggleMenu((prev) => !prev)} 
-                            />
+                        <div className="fixed right-0 bottom-0 z-40 h-full w-[200px] bg-accent-yellow-300 opacity-80">
+                            <div className="">
+                                <MdClose size={35} onClick={() => setToggleMenu((prev) => !prev)} />
+                            </div>
                         </div>
-                        // <MdClose 
-                        // size={35}
-                        // onClick={() => setToggleMenu((prev) => !prev)} 
-                        // />
-                        
                     ) : (
-                        <CgMenuHotdog 
-                        size={35}
-                        onClick={() => setToggleMenu((prev) => !prev)} 
-                        />
+                        <div>
+                            <CgMenuHotdog size={35} onClick={() => setToggleMenu((prev) => !prev)} />
+                        </div> 
                     )}
                 </div>
             </div>
