@@ -56,16 +56,18 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            {/* MOBILE VIEW */}
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
                 <div className="text-secondary-blue items-center cursor-pointer">
                     {toggleMenu ? (
+                        // CLOSE ICON
                         <MdClose 
                         size={35}
                         onClick={() => setToggleMenu((prev) => !prev)} 
                         />
+                        
                     ) : (
                         <CgMenuHotdog 
-                        className="icon-transition"
                         size={35}
                         onClick={() => setToggleMenu((prev) => !prev)} 
                         />
