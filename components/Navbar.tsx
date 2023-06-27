@@ -5,6 +5,7 @@ import NavItem from './NavItem';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { BiHomeAlt2 } from 'react-icons/bi'
 import { CgMenuHotdog } from 'react-icons/cg';
+import { MdClose } from 'react-icons/md';
 
 const navItems = [
     "About", 
@@ -56,8 +57,18 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
-                <div className="text-secondary-blue">
-                    <CgMenuHotdog size={35}/>
+                <div className="text-secondary-blue items-center">
+                    {toggleMenu ? (
+                        <CgMenuHotdog 
+                        size={35}
+                        onClick={() => setToggleMenu((prev) => !prev)} 
+                        />
+                    ) : (
+                        <MdClose 
+                        size={35}
+                        onClick={() => setToggleMenu((prev) => !prev)} 
+                        />
+                    )}
                 </div>
             </div>
         </div>
