@@ -2,9 +2,8 @@
 
 import React, { useState } from 'react';
 import NavItem from './NavItem';
-import Image from 'next/image';
-import homeIcon from "../public/home-icon.svg";
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BiHomeAlt2 } from 'react-icons/bi'
 import { CgMenuHotdog } from 'react-icons/cg';
 
 const navItems = [
@@ -21,13 +20,10 @@ const Navbar = () => {
         <div className="fixed top-0 z-30 w-full py-6 items-center justify-between">
             <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
                 {/* LOGO */}
-                <Image 
-                    src={homeIcon}
-                    alt="Home"
-                    height={25}
-                    width={25}
-                    className="hover:drop-shadow-md cursor-pointer"
-                />
+                <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
+                    <BiHomeAlt2 size={27} />
+                </div>
+                
                 <div className="flex items-center justify-between gap-8">
                     {/* NAV LINKS */}
                     {navItems.map((label, index) => (
