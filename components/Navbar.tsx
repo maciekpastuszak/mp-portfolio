@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav>
         <div className="fixed top-0 z-30 w-full py-6 items-center justify-between">
-            <div className="mx-auto w-5/6 sm:flex hidden items-center justify-between">
+            <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
                 {/* LOGO */}
                 <Image 
                     src={homeIcon}
@@ -42,21 +42,27 @@ const Navbar = () => {
                         {/* SOCIAL MEDIA */}
                         <ul className="flex flex-row">
                             <li className="
-                            text-secondary-blue 
-                            ps-4 
-                            hover:drop-shadow-md 
-                            cursor-pointer"><BsGithub /></li>
+                                text-secondary-blue 
+                                ps-4 
+                                hover:drop-shadow-md 
+                                cursor-pointer">
+                                <BsGithub size={25}/>
+                            </li>
                             <li className="
-                            text-secondary-blue 
-                            ps-4 
-                            hover:drop-shadow-md 
-                            cursor-pointer"><BsLinkedin /></li>
+                                text-secondary-blue 
+                                ps-4 
+                                hover:drop-shadow-md 
+                                cursor-pointer">
+                                <BsLinkedin size={25}/>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="mx-auto w-5/6 sm:hidden flex justify-end">
-                <div className="text-secondary-blue"><CgMenuHotdog /></div>
+            <div className="mx-auto w-5/6 md:hidden flex justify-end">
+                <div className="text-secondary-blue">
+                    <CgMenuHotdog size={35}/>
+                </div>
             </div>
         </div>
     </nav>
