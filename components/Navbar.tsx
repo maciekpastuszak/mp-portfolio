@@ -78,10 +78,37 @@ const Navbar = () => {
                             <div className="">
                                 <MdClose size={35} onClick={() => setToggleMenu((prev) => !prev)} />
                             </div>
+                            <div className="flex flex-col items-center gap-6 mt-6">
+                                {navItems.map((label, index) => (
+                                <NavItem 
+                                    key={index} 
+                                    label={label} 
+                                />
+                                ))}
+                            </div>
+                            <ul className="flex flex-col items-center my-8 gap-4">
+                            <li className="
+                                text-secondary-blue 
+                                hover:drop-shadow-md 
+                                cursor-pointer">
+                                <BsGithub size={25}/>
+                            </li>
+                            <li className="
+                                text-secondary-blue 
+                                hover:drop-shadow-md 
+                                cursor-pointer">
+                                <BsLinkedin size={25}/>
+                            </li>
+                        </ul>
                         </div>
                     ) : (
                         <div>
-                            <CgMenuHotdog size={35} onClick={() => setToggleMenu((prev) => !prev)} />
+                            <span>
+                                <CgMenuHotdog size={34} onClick={() => setToggleMenu((prev) => !prev)} />
+                            </span>
+                            <div className="border white absolute top-6 right-0 w-28 z-30 py-4 rounded-l-3xl">
+                                
+                            </div>
                         </div> 
                     )}
                 </div>
