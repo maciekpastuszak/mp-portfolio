@@ -102,11 +102,11 @@ const Navbar = () => {
                         </ul>
                         </div>
                     ) : (
-                        <div>
-                            <span>
-                                <CgMenuHotdog size={34} onClick={() => setToggleMenu((prev) => !prev)} />
+                        <div onClick={() => setToggleMenu((prev) => !prev)}>
+                            <span className="relative">
+                                <CgMenuHotdog size={34} />
                             </span>
-                            <div className="border white absolute top-6 right-0 w-28 z-30 py-4 rounded-l-3xl">
+                            <div className="flex border white absolute top-6 right-0 w-28 z-30 py-4 rounded-l-3xl">
                                 
                             </div>
                         </div> 
