@@ -10,7 +10,10 @@ import { MdClose } from 'react-icons/md';
 const navItems = [
     "About", 
     "Portfolio", 
-    "Contact"];
+    "Contact"
+];
+
+const navBackground = "z-40 overflow-hidden bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100"
     
 const Navbar = () => {
 
@@ -62,19 +65,13 @@ const Navbar = () => {
                     {toggleMenu ? (
                         <div className=
                         {`${toggleMenu ? 'slideIn' : ''} 
+                        ${navBackground}
                         fixed right-[-200px]
                         bottom-0
-                        z-40
+                        rounded-md
                         h-full
                         w-[200px]
-                        overflow-hidden
-                        bg-gray-500
-                        rounded-md
-                        bg-clip-padding
-                        backdrop-filter
-                        backdrop-blur-md
-                        bg-opacity-20 border
-                        border-gray-100`}>
+                        `}>
                             <div className="">
                                 <MdClose size={35} onClick={() => setToggleMenu((prev) => !prev)} />
                             </div>
@@ -103,13 +100,13 @@ const Navbar = () => {
                         </div>
                     ) : (
                         <div onClick={() => setToggleMenu((prev) => !prev)}>
-                            <span className="fixed top-6 right-10">
+                            <div className="fixed top-6 right-10 z-10">
                                 <CgMenuHotdog size={34} />
-                            </span>
-                            <div className="flex border white absolute top-6 right-0 w-24 z-30 py-4 rounded-l-3xl">
-                                
                             </div>
-                        </div> 
+                            <div className={`${navBackground} absolute top-6 right-0 w-24 py-4 rounded-l-3xl z-0`}>
+                                {/* Content of the div */}
+                            </div>
+                        </div>
                     )}
                 </div>
             </div>
