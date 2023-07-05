@@ -17,7 +17,7 @@ const navBackground = "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur
     
 const Navbar = () => {
 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   return (
     <nav>
@@ -59,10 +59,18 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <div>
+                            <div className="fixed top-6 right-6 pt-1 z-10">
+                                <CgMenuHotdog size={34} style={{ position: 'relative', top: '-1px', left: '2px' }}  onClick={() => setToggleMenu(!toggleMenu)}/>
+                            </div>
+                            <div className={`${navBackground} absolute top-6 right-0 w-16 py-5 rounded-l-3xl`}>
+                                {/* Content of the div */}
+                            </div>
+                        </div>
             {/* MOBILE VIEW */}
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
                 <div className="text-secondary-blue items-center cursor-pointer">
-                    {toggleMenu ? (
+                    {toggleMenu && (
                         <div className={`
                         ${toggleMenu ? 'slideIn' : 'slideOut'} 
                         ${navBackground}
@@ -81,7 +89,7 @@ const Navbar = () => {
                                 <CgMenuHotdog 
                                 size={35}
                                 style={{ position: 'relative', top: '-2px', left: '2px' }}
-                                onClick={() => setToggleMenu(false)}
+                                onClick={() => setToggleMenu(!toggleMenu)}
                                 />
                             </div>
                             <div className="flex flex-col items-center gap-6 mt-6">
@@ -106,15 +114,6 @@ const Navbar = () => {
                                 <BsLinkedin size={25}/>
                             </li>
                         </ul>
-                        </div>
-                    ) : (
-                        <div onClick={() => setToggleMenu(true)}>
-                            <div className="fixed top-6 right-6 pt-1 z-10">
-                                <CgMenuHotdog size={34} style={{ position: 'relative', top: '-1px', left: '2px' }}/>
-                            </div>
-                            <div className={`${navBackground} absolute top-6 right-0 w-16 py-5 rounded-l-3xl`}>
-                                {/* Content of the div */}
-                            </div>
                         </div>
                     )}
                 </div>
