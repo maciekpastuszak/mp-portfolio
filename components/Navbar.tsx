@@ -13,7 +13,7 @@ const navItems = [
     "Contact"
 ];
 
-const navBackground = "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100"
+const navBackground = "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20"
     
 const Navbar = () => {
 
@@ -71,10 +71,12 @@ const Navbar = () => {
                         rounded-md
                         h-full
                         w-[200px]
+                        shadow-md shadow-black
                         `}>
-                            <div className={`${navBackground} absolute top-6 right-48 w-20 py-4 rounded-l-3xl`}>
-                                {/* Content of the div */}
-                            </div>
+                            <div className={`${navBackground} fixed top-6 -ms-16 w-16 py-5 rounded-l-3xl z-40`}>
+    {/* Content of the div */}
+</div>
+
                             <div className="">
                                 <MdClose size={35} onClick={() => setToggleMenu((prev) => !prev)} />
                             </div>
@@ -103,10 +105,10 @@ const Navbar = () => {
                         </div>
                     ) : (
                         <div onClick={() => setToggleMenu((prev) => !prev)}>
-                            <div className="fixed top-6 right-96 z-10">
+                            <div className="fixed top-7 right-6 z-10">
                                 <CgMenuHotdog size={34} />
                             </div>
-                            <div className={`${navBackground} absolute top-6 right-0 w-24 py-4 rounded-l-3xl`}>
+                            <div className={`${navBackground} absolute top-6 right-0 w-16 py-5 rounded-l-3xl`}>
                                 {/* Content of the div */}
                             </div>
                         </div>

@@ -34,6 +34,9 @@ module.exports = {
       },
       dropShadow: {
         "md" : "0 0 5px rgb(163,251,239)"
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(255, 255, 255, 0.3)',
       }
     },
   },
