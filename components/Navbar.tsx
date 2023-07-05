@@ -18,7 +18,6 @@ const navBackground = "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [slideBack, setSlideBack] = useState(false);
 
   return (
     <nav>
@@ -64,10 +63,8 @@ const Navbar = () => {
             <div className="mx-auto w-5/6 md:hidden flex justify-end">
                 <div className="text-secondary-blue items-center cursor-pointer">
                     {toggleMenu ? (
-                        <div className=
-                        {`
-                        ${toggleMenu ? 'slideIn' : ''} 
-                        ${slideBack ? 'slide-back' : ''}
+                        <div className={`
+                        ${toggleMenu ? 'slideIn' : 'slideOut'} 
                         ${navBackground}
                         fixed right-[-200px]
                         bottom-0
@@ -84,10 +81,7 @@ const Navbar = () => {
                                 <CgMenuHotdog 
                                 size={35}
                                 style={{ position: 'relative', top: '-2px', left: '2px' }}
-                                onClick={() => {
-                                  setSlideBack(true);
-                                  setToggleMenu(false);
-                                }}
+                                onClick={() => setToggleMenu(false)}
                                 />
                             </div>
                             <div className="flex flex-col items-center gap-6 mt-6">
@@ -114,7 +108,7 @@ const Navbar = () => {
                         </ul>
                         </div>
                     ) : (
-                        <div onClick={() => setToggleMenu((prev) => !prev)}>
+                        <div onClick={() => setToggleMenu(true)}>
                             <div className="fixed top-6 right-6 pt-1 z-10">
                                 <CgMenuHotdog size={34} style={{ position: 'relative', top: '-1px', left: '2px' }}/>
                             </div>
