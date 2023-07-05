@@ -17,6 +17,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 z-30 w-full py-6 items-center justify-between">
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
+
         {/* HOME */}
         <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
           <BiHomeAlt2 size={27} />
@@ -32,41 +33,26 @@ const Navbar = () => {
         {/* SOCIAL MEDIA */}
         <div className="flex items-center justify-between gap-8">
           <ul className="flex flex-row">
-            <li
-              className="
-                                text-secondary-blue 
-                                ps-4 
-                                hover:drop-shadow-md 
-                                cursor-pointer"
-            >
+            <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
               <BsGithub size={25} />
             </li>
-            <li
-              className="
-                                text-secondary-blue 
-                                ps-4 
-                                hover:drop-shadow-md 
-                                cursor-pointer"
-            >
+            <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
               <BsLinkedin size={25} />
             </li>
           </ul>
         </div>
       </div>
-      <div>
-        <div className="fixed top-6 right-6 pt-1 z-10">
-          <CgMenuHotdog
-            size={34}
-            style={{ position: "relative", top: "-1px", left: "2px" }}
-            onClick={() => setToggleMenu(!toggleMenu)}
-          />
+
+      {/* MENU */}
+      <div className="md:hidden">
+        <div className="fixed top-5 mt-0.5 right-6 z-10 text-secondary-blue cursor-pointer">
+          <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
         </div>
         <div
-          className={`${navBackground} absolute top-6 right-0 w-16 py-5 rounded-l-3xl`}
-        >
-          {/* Content of the div */}
-        </div>
+          className={`${navBackground} absolute top-5 right-0 w-16 p-5 rounded-l-3xl`}
+        ></div>
       </div>
+
       {/* MOBILE VIEW */}
       <div className="mx-auto w-5/6 md:hidden flex justify-end">
         <div className="text-secondary-blue items-center cursor-pointer">
