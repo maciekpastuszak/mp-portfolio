@@ -6,6 +6,23 @@ const Hero = () => {
   const [typedText, setTypedText] = useState('');
   const firstLine = 'Heello there!';
 
+  useEffect(() => {
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      if (currentIndex === firstLine.length - 1) {
+        clearInterval(intervalId);
+      } else {
+        setTypedText((prevText) => prevText + firstLine[currentIndex]);
+        currentIndex++;
+      }
+    }, 100);
+  
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [firstLine]);
+
+
   return (
     <section>
       <div className="w-100 bg-primary-dark">
