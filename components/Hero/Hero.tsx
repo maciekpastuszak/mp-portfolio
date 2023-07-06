@@ -26,6 +26,18 @@ const Hero = () => {
   return (
     <section>
       <div className="w-100 bg-primary-dark">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute w-auto min-w-full min-h-full max-w-none opacity-25"
+      >
+        <source
+          src="backgroundVid.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300">
           <div className="text-end">
             <div className="grid gap-y-3">
