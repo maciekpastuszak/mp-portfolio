@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* MENU */}
       <div className="md:hidden">
-        <div className="fixed top-5 mt-0.5 right-6 z-10 text-secondary-blue cursor-pointer">
+        <div className={`fixed top-5 mt-0.5 ${toggleMenu ? "right-56" : "right-6"} z-10 text-secondary-blue cursor-pointer`}>
           <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
         </div>
         <div
@@ -70,18 +70,12 @@ const Navbar = () => {
                       `}
             >
               <div
-                className={`${navBackground} fixed top-6 -ms-16 w-16 py-5 rounded-l-3xl z-40`}
+                className={`${navBackground} fixed top-5 -ms-16 w-16 py-5 rounded-l-3xl z-40`}
               >
                 {/* Content of the div */}
               </div>
 
-              <div className="fixed top-6 -ms-14 pt-1">
-                <CgMenuHotdog
-                  size={35}
-                  style={{ position: "relative", top: "-2px", left: "2px" }}
-                  onClick={() => setToggleMenu(!toggleMenu)}
-                />
-              </div>
+ 
               <div className="flex flex-col items-center gap-6 mt-6">
                 {navItems.map((label, index) => (
                   <NavItem key={index} label={label} />
