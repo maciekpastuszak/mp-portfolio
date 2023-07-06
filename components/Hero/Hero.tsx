@@ -30,7 +30,7 @@ const Hero = () => {
         autoPlay
         loop
         muted
-        className="absolute w-auto min-w-full min-h-full max-w-none opacity-25"
+        className="absolute w-auto min-w-full min-h-full max-w-none opacity-10"
       >
         <source
           src="backgroundVid.mp4"
@@ -38,7 +38,7 @@ const Hero = () => {
         />
         Your browser does not support the video tag.
       </video>
-        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300">
+        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10">
           <div className="text-end">
             <div className="grid gap-y-3">
               <p className="font-medium text-6xl">{typedText}</p>
