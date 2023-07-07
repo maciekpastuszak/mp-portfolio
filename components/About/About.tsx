@@ -8,9 +8,6 @@ const About = () => {
           <div className="w-50 h-50 border-red-500">
             Test
           </div>
-          <div className="w-50 h-50 border-red-500">
-            Test
-          </div>
         </div>
       </div>
     </section>

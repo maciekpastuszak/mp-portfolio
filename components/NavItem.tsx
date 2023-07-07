@@ -2,12 +2,13 @@ import React from 'react'
 
 interface NavItemProps {
   label: string;
+  href: string;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ label }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, href }) => {
   return (
     <div className="px-2 cursor-pointer">
-      <span className="text-secondary-blue hover:drop-shadow-md">{label}</span>
+      <a href={href} className="text-secondary-blue hover:drop-shadow-md">{label}</a>
     </div>
   )
 }
