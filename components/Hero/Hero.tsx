@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
   return (
-    <section>
+    <section id="Hero">
       <div className="w-100 bg-primary-dark">
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10">
           <div className="text-end">
