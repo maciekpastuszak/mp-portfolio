@@ -26,7 +26,7 @@ module.exports = {
         "accent-yellow": {
           DEFAULT: "#FFDF38",
           300: "#FFF09F",
-          800: "#E1BD00",
+          800: "#EECB15",
         },
       },
       backgroundImage: {
