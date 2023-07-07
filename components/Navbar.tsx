@@ -45,8 +45,8 @@ const Navbar = () => {
       </div>
 
       {/* BURGER */}
-        <div className={`${navBackground} md:hidden fixed top-6 right-0 w-16 p-5 rounded-l-3xl`}>
-          <div className={`absolute top-0 mt-0.5 ${toggleMenu ? "right-56" : "right-6"} z-10 text-secondary-blue cursor-pointer`}>
+        <div className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl ${toggleMenu ? "right-52" : "right-0"}`}>
+          <div className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}>
             <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
           </div>
         </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
                         bottom-0
                         rounded-md
                         h-full
-                        w-[200px]
+                        w-[210px]
                         shadow-md shadow-black
                       `}
             >
