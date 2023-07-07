@@ -14,7 +14,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 z-30 w-full py-6 items-center justify-between">
+    <nav className="fixed top-0 z-30 w-full py-6">
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
 
         {/* HOME */}
@@ -44,15 +44,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MENU */}
-      <div className="md:hidden">
-        <div className={`fixed top-5 mt-0.5 ${toggleMenu ? "right-56" : "right-6"} z-10 text-secondary-blue cursor-pointer`}>
-          <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
+      {/* BURGER */}
+        <div className={`${navBackground} md:hidden fixed top-6 right-0 w-16 p-5 rounded-l-3xl`}>
+          <div className={`absolute top-0 mt-0.5 ${toggleMenu ? "right-56" : "right-6"} z-10 text-secondary-blue cursor-pointer`}>
+            <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
+          </div>
         </div>
-        <div
-          className={`${navBackground} absolute top-5 right-0 w-16 p-5 rounded-l-3xl`}
-        ></div>
-      </div>
 
       {/* MOBILE VIEW */}
       <div className="mx-auto w-5/6 md:hidden flex justify-end">
@@ -70,13 +67,6 @@ const Navbar = () => {
                         shadow-md shadow-black
                       `}
             >
-              <div
-                className={`${navBackground} fixed top-5 -ms-16 w-16 py-5 rounded-l-3xl z-40`}
-              >
-                {/* Content of the div */}
-              </div>
-
- 
               <div className="flex flex-col items-center gap-6 mt-6">
               {NavLinks.map((link, index) => (
                 <NavItem key={index} href={link.href} label={link.text} />
