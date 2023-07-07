@@ -21,7 +21,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          className="object-cover h-screen min-w-full max-h-full opacity-10 w-full"
+          className="object-cover h-screen min-w-full max-h-full opacity-20 w-full"
         >
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
