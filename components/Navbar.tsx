@@ -5,8 +5,7 @@ import NavItem from "./NavItem";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { CgMenuHotdog } from "react-icons/cg";
-
-const navItems = ["About", "Portfolio", "Contact"];
+import { NavLinks } from "@/constants";
 
 const navBackground =
   "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20";
@@ -20,13 +19,15 @@ const Navbar = () => {
 
         {/* HOME */}
         <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
-          <BiHomeAlt2 size={27} />
+          <a href="/#hero">
+            <BiHomeAlt2 size={27} />
+          </a>
         </div>
 
         {/* NAV LINKS */}
         <div className="flex items-center justify-between gap-8">
-          {navItems.map((label, index) => (
-            <NavItem key={index} label={label} />
+          {NavLinks.map((link, index) => (
+            <NavItem key={index} href={link.href} label={link.text} />
           ))}
         </div>
 
@@ -77,9 +78,9 @@ const Navbar = () => {
 
  
               <div className="flex flex-col items-center gap-6 mt-6">
-                {navItems.map((label, index) => (
-                  <NavItem key={index} label={label} />
-                ))}
+              {NavLinks.map((link, index) => (
+                <NavItem key={index} href={link.href} label={link.text} />
+              ))}
               </div>
               <ul className="flex flex-col items-center my-8 gap-4">
                 <li
