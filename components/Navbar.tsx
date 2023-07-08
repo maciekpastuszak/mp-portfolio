@@ -6,9 +6,15 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { CgMenuHotdog } from "react-icons/cg";
 import { NavLinks } from "@/constants";
+import { motion } from "framer-motion";
 
 const navBackground =
   "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20";
+
+  const variants = {
+    slideIn: { x: -200, ease: "easeIn", duration: 0.3 },
+    slideOut: { x: 200, ease: "easeIn", duration: 0.3 },
+  }
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
@@ -45,7 +51,7 @@ const Navbar = () => {
       </div>
 
       {/* BURGER */}
-        <div className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl ${toggleMenu ? "right-52" : "right-0"}`}>
+       <div className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl ${toggleMenu ? "right-52" : "right-0"}`}>
           <div className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}>
             <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
           </div>
@@ -55,9 +61,12 @@ const Navbar = () => {
       <div className="mx-auto w-5/6 md:hidden flex justify-end">
         <div className="text-secondary-blue items-center cursor-pointer">
           {toggleMenu && (
-            <div
+            <motion.div
+            animate="slideIn"
+            exit="slideOut"
+            variants={variants}
               className={`
-                        ${toggleMenu ? "slideIn" : "slideOut"} 
+                     
                         ${navBackground}
                         fixed right-[-200px]
                         bottom-0
@@ -90,7 +99,7 @@ const Navbar = () => {
                   <BsLinkedin size={25} />
                 </li>
               </ul>
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
