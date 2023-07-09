@@ -17,20 +17,18 @@ const Hero = () => {
       <div className="w-100 bg-primary-dark">
 
         {/* Hero header */}
-        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10">
-          <div className="text-end">
-            <div className="grid gap-y-3">
-              <p className="font-medium text-6xl">Hello there</p>
-              <p className="font-normal text-4xl">
-                My name is <span className="text-accent-yellow">Maciek</span>
-              </p>
-              <p className="font-light text-3xl">I’m a web developer</p>
-            </div>
+        <div className="border min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
+          <div className="grid gap-y-3">
+            <p className="font-medium text-6xl">Hello there</p>
+            <p className="font-normal text-4xl">
+              My name is <span className="text-accent-yellow">Maciek</span>
+            </p>
+            <p className="font-light text-3xl">I’m a web developer</p>
+          </div>
 
-            {/* Link to ABOUT */}
-            <div className="flex justify-center mt-5 absolute bottom-0">
-              About
-            </div>
+          {/* Link to ABOUT */}
+          <div className="flex justify-center mt-5 absolute bottom-0 right-1/2">
+            About
           </div>
         </div>
       </div>
