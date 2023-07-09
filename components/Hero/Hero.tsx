@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="w-100 bg-primary-dark">
 
         {/* Hero header */}
-        <div className="border min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
+        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
           <div className="grid gap-y-3">
             <p className="font-medium text-6xl">Hello there</p>
             <p className="font-normal text-4xl">
@@ -27,8 +27,13 @@ const Hero = () => {
           </div>
 
           {/* Link to ABOUT */}
-          <div className="flex justify-center mt-5 absolute bottom-0 right-1/2">
-            About
+          <div className="border flex justify-center mt-5 absolute bottom-0 right-1/2">
+          <div className="w-0 h-0 
+            border-l-[50px] border-l-transparent
+            border-t-[75px] border-t-red-500
+            border-r-[50px] border-r-transparent">
+              About me
+          </div>
           </div>
         </div>
       </div>
