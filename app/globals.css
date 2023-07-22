@@ -51,7 +51,7 @@
 .triangleLink {
     width: 0;
     height: 0;
-    border-top: 40px solid #CC85DD;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+    border-top: 100px solid #CC85DD;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
   }
