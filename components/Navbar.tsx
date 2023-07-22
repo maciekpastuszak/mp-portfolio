@@ -51,11 +51,15 @@ const Navbar = () => {
       </div>
 
       {/* BURGER */}
-       <div className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl ${toggleMenu ? "right-52" : "right-0"}`}>
-          <div className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}>
-            <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
-          </div>
+      <motion.div 
+         animate={`${toggleMenu ? "slideIn" : ""}`}
+         variants={variants}
+         className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl right-0`}
+      >
+        <div className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}>
+          <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
         </div>
+      </motion.div>
 
       {/* MOBILE VIEW */}
       <div className="mx-auto w-5/6 md:hidden flex justify-end">
