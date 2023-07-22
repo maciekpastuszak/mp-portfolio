@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import TriangleLink from '../TriangleLink';
 
 const Hero = () => {
   return (
@@ -25,16 +26,11 @@ const Hero = () => {
             </p>
             <p className="font-light text-3xl">I’m a web developer</p>
           </div>
+        </div>
 
-          {/* Link to ABOUT */}
-          <div className="border flex justify-center mt-5 absolute bottom-0 right-1/2">
-          <div className="w-0 h-0 
-            border-l-[50px] border-l-transparent
-            border-t-[75px] border-t-red-500
-            border-r-[50px] border-r-transparent">
-              About me
-          </div>
-          </div>
+        {/* TriangleLink (About Me) */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+          <TriangleLink />
         </div>
       </div>
     </section>
