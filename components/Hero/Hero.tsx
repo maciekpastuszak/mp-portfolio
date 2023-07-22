@@ -26,11 +26,11 @@ const Hero = () => {
             </p>
             <p className="font-light text-3xl">I’m a web developer</p>
           </div>
-        </div>
 
-        {/* TriangleLink (About Me) */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-          <TriangleLink />
+          {/* Link to ABOUT */}
+          <div className="border flex justify-center mt-5 absolute bottom-0 right-1/2">
+          <div className="triangleLink"></div>
+          </div>
         </div>
       </div>
     </section>
