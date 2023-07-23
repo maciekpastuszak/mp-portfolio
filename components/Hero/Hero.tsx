@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       {/* Link to ABOUT */}
-      <TriangleLink />
+      <TriangleLink label="about me" />
     </section>
   );
 };

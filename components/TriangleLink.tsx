@@ -1,8 +1,12 @@
 import React from 'react'
 
-const TriangleLink: React.FC = () => {
+interface TriangleLinkProps {
+  label: string
+}
+
+const TriangleLink: React.FC<TriangleLinkProps> = ({label}) => {
   return (
-    <div className="absolute bottom-0 right-1/2">
+    <div className="absolute transform -translate-x-1/2 bottom-0 left-1/2">
       <div className="
         w-[190px] 
         h-[100px] 
@@ -25,7 +29,7 @@ const TriangleLink: React.FC = () => {
           border-solid
           border-accent-yellow 
         "
-        ></div>
+        >{label}</div>
       </div>
     </div>
 
