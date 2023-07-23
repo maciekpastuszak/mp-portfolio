@@ -29,7 +29,17 @@ const TriangleLink: React.FC<TriangleLinkProps> = ({label}) => {
           border-solid
           border-accent-yellow 
         "
-        >{label}</div>
+        >
+          <p className="
+            text-secondary-blue
+            text-center
+            absolute
+            bottom-0
+            left-9
+          ">
+          {label}
+          </p>
+        </div>
       </div>
     </div>
 
