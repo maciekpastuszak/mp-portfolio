@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import TriangleLink from '../TriangleLink';
 import { AnimatePresence } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   return (
@@ -23,7 +24,16 @@ const Hero = () => {
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
           <div className="grid gap-y-3">
-            <p className="font-medium text-6xl">Hello there</p>
+            <p className="font-medium text-6xl">
+            <Typewriter
+            words={['Hello there!']}
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={5000}
+          />
+            </p>
             <p className="font-normal text-4xl">
               My name is <span className="text-accent-yellow">Maciek</span>
             </p>
