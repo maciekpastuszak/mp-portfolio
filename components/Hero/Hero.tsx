@@ -3,9 +3,13 @@
 import React, { useEffect, useState } from 'react';
 import TriangleLink from '../TriangleLink';
 import { AnimatePresence } from 'framer-motion';
-import { Typewriter } from 'react-simple-typewriter';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
+  const [text1] = useTypewriter({
+    words: ['Hello there!']
+  });
+
   return (
     <section id="hero">
       <div className="absolute inset-0">
@@ -25,17 +29,10 @@ const Hero = () => {
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
           <div className="grid gap-y-3">
             <p className="font-medium text-6xl">
-            <Typewriter
-            words={['Hello there!']}
-            cursor
-            cursorStyle='|'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={5000}
-          />
+              {text1}
             </p>
-            <p className="font-normal text-4xl">
-              My name is <span className="text-accent-yellow">Maciek</span>
+            <p className="font-normal text-4xl"> 
+            My name is <span className="text-accent-yellow">Maciek</span>  
             </p>
             <p className="font-light text-3xl">I’m a web developer</p>
           </div>
