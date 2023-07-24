@@ -1,5 +1,8 @@
+"use client"
+
 import React, { useEffect, useState } from 'react';
 import TriangleLink from '../TriangleLink';
+import { AnimatePresence } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -30,7 +33,9 @@ const Hero = () => {
       </div>
 
       {/* Link to ABOUT */}
-      <TriangleLink label="about me" />
+      <AnimatePresence>
+        <TriangleLink label="about me" />
+      </AnimatePresence>
     </section>
   );
 };
