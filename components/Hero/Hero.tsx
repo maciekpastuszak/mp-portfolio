@@ -1,18 +1,32 @@
 "use client"
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TriangleLink from '../TriangleLink';
 import { AnimatePresence } from 'framer-motion';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
-  const [text1] = useTypewriter({
-    words: ['Hello there!']
-  });
 
-  const [text2, { isDone }] = useTypewriter({
-    words: [`My name is Maciek`]
-  });
+  const [showCursor1, setShowCursor] = useState(true);
+  const [showCursor2, setShowCursor2] = useState(true);
+  const [showSecondLine, setShowSecondLine] = useState(false);
+  const [showThirdLine, setShowThirdLine] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor(false);
+      setShowSecondLine(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor2(false)
+      setShowThirdLine(true)
+    }, 6000)
+  }, []);
 
   return (
     <section id="hero">
@@ -32,19 +46,43 @@ const Hero = () => {
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
           <div className="grid gap-y-3">
             <p className="font-medium text-6xl">
-              {text1}
-              <Cursor />
+              <Typewriter 
+                words={["Hello there!"]}
+                cursor={showCursor1}
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </p>
-            <p className="font-normal text-4xl">
-              {isDone ? (
-                <>
-                  My name is <span className="text-accent-yellow">Maciek</span>
-                </>
-              ) : (
-                text2
-              )}
-            </p>
-            <p className="font-light text-3xl">I’m a web developer</p>
+            {showSecondLine && (
+              <>
+              <p className="font-normal text-4xl">
+              <Typewriter 
+                words={["My name is Maciek"]}
+                cursor={showCursor2}
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+                {/* <span className="text-accent-yellow">Maciek</span> */}
+              </p>
+              </>
+            )}
+            {showThirdLine && (
+              
+              <p className="font-light text-3xl">
+                <Typewriter 
+                words={["I’m a web developer"]}
+                cursor
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+                </p> 
+            )}
           </div>
         </div>
       </div>
