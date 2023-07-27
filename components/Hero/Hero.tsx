@@ -141,7 +141,7 @@ const Hero = () => {
       {/* Link to ABOUT */}
       <AnimatePresence>
         {/* <TriangleLink label="about me" /> */}
-        <ScrollElement type={"chevron-bouncing"} text={"about me"} colorIcon={"#fff"} colorText={"#fff"}/>
+        <ScrollElement type={"chevron-bouncing"} text={"about me"} colorIcon={"accent-yellow"} colorText={"#fff"}/>
       </AnimatePresence>
     </section>
   );
