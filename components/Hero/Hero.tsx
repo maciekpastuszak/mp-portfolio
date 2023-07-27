@@ -7,14 +7,20 @@ import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
 
-  const [showCursor1, setShowCursor] = useState(true);
-  const [showCursor2, setShowCursor2] = useState(true);
+  const [showCursor1, setShowCursor1] = useState(true);
+  const [showCursor2, setShowCursor2] = useState(false);
+  const [showCursor3, setShowCursor3] = useState(false);
+  const [showCursor4, setShowCursor4] = useState(false);
+  const [showCursor5, setShowCursor5] = useState(false);
   const [showSecondLine, setShowSecondLine] = useState(false);
+  const [showName, setShowName] = useState(false);
   const [showThirdLine, setShowThirdLine] = useState(false);
+  const [showPositions, setShowPositions] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowCursor(false);
+      setShowCursor1(false);
+      setShowCursor2(true);
       setShowSecondLine(true);
     }, 3000);
 
@@ -23,9 +29,28 @@ const Hero = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowCursor2(false)
-      setShowThirdLine(true)
+      setShowCursor2(false);
+      setShowCursor3(true);
+      setShowName(true);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor3(false);
+      setShowCursor4(true);
+      setShowThirdLine(true);
     }, 6000)
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor4(false);
+      setShowCursor5(true);
+      setShowPositions(true);
+    }, 7000)
   }, []);
 
   return (
@@ -59,14 +84,28 @@ const Hero = () => {
               <>
               <p className="font-normal text-4xl">
               <Typewriter 
-                words={["My name is Maciek"]}
+                words={[`My name is`]}
                 cursor={showCursor2}
                 cursorStyle='|'
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
               />
-                {/* <span className="text-accent-yellow">Maciek</span> */}
+              {
+                showName && (
+                  <span className="text-accent-yellow">
+                    <Typewriter 
+                    words={[` Maciek`]}
+                    cursor={showCursor2}
+                    cursorStyle='|'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </span>
+                )
+              }
+                
               </p>
               </>
             )}
@@ -74,13 +113,24 @@ const Hero = () => {
               
               <p className="font-light text-3xl">
                 <Typewriter 
-                words={["I’m a web developer"]}
-                cursor
+                words={["I’m a "]}
+                cursor={showCursor4}
                 cursorStyle='|'
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
               />
+              {showPositions && (
+                <Typewriter 
+                words={["web developer", "full stack dev", "project manager", "web developer"]}
+                cursor={showCursor5}
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+                />
+              )}
+
                 </p> 
             )}
           </div>
