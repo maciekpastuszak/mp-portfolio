@@ -139,10 +139,12 @@ const Hero = () => {
       </div>
 
       {/* Link to ABOUT */}
-      <AnimatePresence>
+      <div className="relative">
         {/* <TriangleLink label="about me" /> */}
-        <ScrollElement type={"chevron-bouncing"} text={"about me"} colorIcon={"accent-yellow"} colorText={"#fff"}/>
-      </AnimatePresence>
+        <a href="#about" className="text-sm">
+          <ScrollElement type={"chevron-bouncing"} text={"about me"} colorIcon={"#FFDF38"} colorText={"#fff"} />
+        </a>
+      </div>
     </section>
   );
 };
