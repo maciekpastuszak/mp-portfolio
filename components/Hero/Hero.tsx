@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import TriangleLink from '../TriangleLink';
 import { AnimatePresence } from 'framer-motion';
 import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
+import ScrollElement from 'react-scroll-element';
 
 const Hero = () => {
 
@@ -139,7 +140,8 @@ const Hero = () => {
 
       {/* Link to ABOUT */}
       <AnimatePresence>
-        <TriangleLink label="about me" />
+        {/* <TriangleLink label="about me" /> */}
+        <ScrollElement type={"chevron-bouncing"} text={"about me"} colorIcon={"#fff"} colorText={"#fff"}/>
       </AnimatePresence>
     </section>
   );
