@@ -17,6 +17,7 @@ const Hero = () => {
   const [showName, setShowName] = useState(false);
   const [showThirdLine, setShowThirdLine] = useState(false);
   const [showPositions, setShowPositions] = useState(false);
+  const [showLink, setShowLink] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,8 +33,15 @@ const Hero = () => {
     const timer = setTimeout(() => {
       setShowCursor2(false);
       setShowCursor3(true);
-      setShowName(true);
     }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowName(true);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -43,6 +51,7 @@ const Hero = () => {
       setShowCursor3(false);
       setShowCursor4(true);
       setShowThirdLine(true);
+      setShowLink(true);
     }, 6000)
   }, []);
 
@@ -97,7 +106,7 @@ const Hero = () => {
                   <span className="text-accent-yellow">
                     <Typewriter 
                     words={[` Maciek`]}
-                    cursor={showCursor2}
+                    cursor={showCursor3}
                     cursorStyle='|'
                     typeSpeed={70}
                     deleteSpeed={50}
@@ -123,11 +132,11 @@ const Hero = () => {
               />
               {showPositions && (
                 <Typewriter 
-                words={["web developer", "full stack dev", "project manager", "web developer"]}
+                words={["web developer", "full stack developer", "project manager", "web developer"]}
                 cursor={showCursor5}
                 cursorStyle='|'
-                typeSpeed={70}
-                deleteSpeed={50}
+                typeSpeed={90}
+                deleteSpeed={90}
                 delaySpeed={1000}
                 />
               )}
@@ -139,12 +148,13 @@ const Hero = () => {
       </div>
 
       {/* Link to ABOUT */}
-      <div className="absolute left-24">
-        {/* <TriangleLink label="about me" /> */}
-        <a href="#about">
-          <ScrollElement type={"chevron-bouncing"} text={"about"} colorIcon={"#FFDF38"} colorText={"#fff"} />
-        </a>
-      </div>
+      {showLink && (
+        <div className="absolute left-24 ease-in">
+          <a href="#about">
+            <ScrollElement type={"chevron-bouncing"} text={"about"} colorIcon={"#FFDF38"} colorText={"#fff"} />
+          </a>
+        </div>
+        )}
     </section>
   );
 };
