@@ -65,7 +65,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -75,7 +75,7 @@ const Hero = () => {
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">

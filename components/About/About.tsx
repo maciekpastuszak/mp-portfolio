@@ -3,11 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <section id="about">
-      <div className="min-h-screen flex items-center justify-center bg-accent-yellow text-secondary-blue">
-        <div className="max-w-screen-lg px-4 py-8">
-          <div className="w-50 h-50 border-red-500">
-            Test
-          </div>
+      <div className="w-100 bg-primary-dark">
+        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-center text-secondary-blue-300">
+          
         </div>
       </div>
     </section>
