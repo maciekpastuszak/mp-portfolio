@@ -33,18 +33,13 @@ const Hero = () => {
     const timer = setTimeout(() => {
       setShowCursor2(false);
       setShowCursor3(true);
+      setShowName(true);
     }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowName(true);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
+ 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -65,7 +60,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      {/* <div className="absolute inset-0">
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -75,7 +70,7 @@ const Hero = () => {
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div> */}
+      </div>
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
@@ -136,7 +131,7 @@ const Hero = () => {
                 cursor={showCursor5}
                 cursorStyle='|'
                 typeSpeed={90}
-                deleteSpeed={90}
+                deleteSpeed={40}
                 delaySpeed={1000}
                 />
               )}
