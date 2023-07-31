@@ -48,10 +48,3 @@
   transform: translateX(200px);
 }
 
-.triangleLink {
-    width: 0;
-    height: 0;
-    border-top: 70px solid #CC85DD;
-    border-left: 180px solid transparent;
-    border-right: 180px solid transparent;
-  }
