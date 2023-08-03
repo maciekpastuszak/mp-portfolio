@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Strength = () => {
+interface StrengthProps {
+  icon: string,
+  title: string,
+  content: string
+}
+
+const Strength: React.FC<StrengthProps> = ({icon, title, content}) => {
   return (
     <>
         <div className="m-3 p-3 w-[200px] h-[200px] items-center border">
