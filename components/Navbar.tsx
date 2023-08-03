@@ -5,7 +5,7 @@ import NavItem from "./NavItem";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { CgMenuHotdog } from "react-icons/cg";
-import { NavLinks } from "@/constants";
+import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 
 const navBackground =
@@ -32,7 +32,7 @@ const Navbar = () => {
 
         {/* NAV LINKS */}
         <div className="flex items-center justify-between gap-8">
-          {NavLinks.map((link, index) => (
+          {navLinks.map((link, index) => (
             <NavItem key={index} href={link.href} label={link.text} />
           ))}
         </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                       `}
             >
               <div className="flex flex-col items-center gap-6 mt-6">
-              {NavLinks.map((link, index) => (
+              {navLinks.map((link, index) => (
                 <NavItem key={index} href={link.href} label={link.text} />
               ))}
               </div>

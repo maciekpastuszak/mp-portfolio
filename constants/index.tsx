@@ -1,10 +1,10 @@
-export const NavLinks = [
+export const navLinks = [
     { href: '/#about', key: 'about', text: 'About' },
     { href: '/#portfolio', key: 'portfolio', text: 'Portfolio' },
     { href: '/#contact', key: 'contact', text: 'Contact' },
   ];
 
-export const StrengthCard = [
+export const strengthCard = [
   {
     src: '/polygon1.svg',
     title: 'Problem solver',
