@@ -1,5 +1,6 @@
-import React from 'react'
-import Strength from '../Strength'
+import React from 'react';
+import Strength from '../Strength';
+import { strengthCard } from '@/constants';
 
 const About = () => {
   return (
@@ -8,12 +9,28 @@ const About = () => {
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-center text-secondary-blue-300">
           <div className="w-full justify-center border flex flex-col sm:flex-row items-center">
             <div className='flex flex-col lg:flex-row'>
-              <Strength />
-              <Strength />
+              <Strength
+                icon={strengthCard[0].src} 
+                title={strengthCard[0].title}
+                content={strengthCard[0].description}
+                />
+              <Strength
+                icon={strengthCard[1].src} 
+                title={strengthCard[1].title}
+                content={strengthCard[1].description}
+                />
             </div>
             <div className='flex flex-col lg:flex-row'>
-              <Strength />
-              <Strength />
+              <Strength
+                icon={strengthCard[2].src} 
+                title={strengthCard[2].title}
+                content={strengthCard[2].description}
+                />  
+              <Strength
+                icon={strengthCard[3].src} 
+                title={strengthCard[3].title}
+                content={strengthCard[3].description}
+                />
             </div>
           </div>
         </div>
