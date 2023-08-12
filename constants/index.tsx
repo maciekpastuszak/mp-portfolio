@@ -21,8 +21,8 @@ export const strengthCard = [
     description: 'Committed to staying updated with the latest trends and best practices in front-end development.'
   },
   {
-    src: '/polygon3.svg',
-    title: 'Continuous learning',
-    description: 'Committed to staying updated with the latest trends and best practices in front-end development.'
+    src: '/polygon4.svg',
+    title: 'User-focused',
+    description: 'Passionate about creating web experiences that prioritize user needs and preferences.'
   },
 ];
