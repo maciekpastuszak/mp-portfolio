@@ -13,7 +13,7 @@ export const strengthCard = [
   {
     src: '/polygon2.svg',
     title: 'Innovative',
-    description: 'Constantly exploring new technologies and pushing the boundaries of web development'
+    description: 'Constantly exploring new technologies and pushing the boundaries of modern web development'
   },
   {
     src: '/polygon3.svg',
