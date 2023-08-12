@@ -20,4 +20,9 @@ export const strengthCard = [
     title: 'Continuous learning',
     description: 'Committed to staying updated with the latest trends and best practices in front-end development.'
   },
+  {
+    src: '/polygon3.svg',
+    title: 'Continuous learning',
+    description: 'Committed to staying updated with the latest trends and best practices in front-end development.'
+  },
 ];
