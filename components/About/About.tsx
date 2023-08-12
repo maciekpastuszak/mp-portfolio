@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section id="about">
       <div className="w-100 bg-primary-dark">
-        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-center text-secondary-blue-300">
-          <div className="w-full justify-center border flex flex-col sm:flex-row items-center">
+        <div className="relative min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
+          <div className="absolute top-20 w-full justify-center border flex flex-col sm:flex-row items-center">
             <div className='flex flex-col lg:flex-row'>
               <Strength
                 icon={strengthCard[0].src} 
