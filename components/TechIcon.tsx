@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 interface TechIconProps {
@@ -7,7 +8,13 @@ interface TechIconProps {
 
 const TechIcon: React.FC<TechIconProps> = ({src, title}) => {
   return (
-    <div>TechIcon</div>
+    <>
+        <Image 
+            src={src}
+            alt={title}
+            title={title}
+        />
+    </>
   )
 }
 
