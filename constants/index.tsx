@@ -26,3 +26,70 @@ export const strengthCard = [
     description: 'Passionate about creating web experiences that prioritize user needs and preferences.'
   },
 ];
+
+export const techIcons = [
+  {
+    src: '/icon-atlassian.svg',
+    title: 'Atlassian'
+  },
+  {
+    src: '/icon-c#.svg',
+    title: 'C#'
+  },
+  {
+    src: '/icon-css.svg',
+    title: 'CSS'
+  },
+  {
+    src: '/icon-express.svg',
+    title: 'ExpressJS'
+  },
+  {
+    src: '/icon-git.svg',
+    title: 'GIT'
+  },
+  {
+    src: '/icon-html.svg',
+    title: 'HTML'
+  },
+  {
+    src: '/icon-js.svg',
+    title: 'JavaScript'
+  },
+  {
+    src: '/icon-mongo.svg',
+    title: 'mongoDB'
+  },
+  {
+    src: '/icon-next.svg',
+    title: 'NextJS'
+  },
+  {
+    src: '/icon-node.svg',
+    title: 'nodeJS'
+  },
+  {
+    src: '/icon-openai.svg',
+    title: 'OpenAI'
+  },
+  {
+    src: '/icon-python.svg',
+    title: 'Python'
+  },
+  {
+    src: '/icon-react.svg',
+    title: 'ReactJS'
+  },
+  {
+    src: '/icon-solidity.svg',
+    title: 'Solidity'
+  },
+  {
+    src: '/icon-tailwind.svg',
+    title: 'TailwindCSS'
+  },
+  {
+    src: '/icon-typescript.svg',
+    title: 'TypeScript'
+  },
+]
