@@ -33,7 +33,7 @@ export const techIcons = [
     title: 'Atlassian'
   },
   {
-    src: '/icon-c#.svg',
+    src: '/icon-csharp.svg',
     title: 'C#'
   },
   {

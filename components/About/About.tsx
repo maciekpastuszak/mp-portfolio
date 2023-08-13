@@ -37,10 +37,12 @@ const About = () => {
             </div>
 
             <div className="relative top-28 w-full">
-              <div className="border">
-                <p>technologies</p> 
+              <p>technologies</p> 
+              <div className="border flex flex-wrap p-6">
                 {techIcons.map((item, index) => (
-                  <TechIcon src={item.src} title={item.title} />
+                  <div className="p-5">
+                     <TechIcon src={item.src} title={item.title} />
+                  </div>
                 )
                 )}
               </div>

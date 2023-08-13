@@ -13,6 +13,8 @@ const TechIcon: React.FC<TechIconProps> = ({src, title}) => {
             src={src}
             alt={title}
             title={title}
+            width={80}
+            height={80}
         />
     </>
   )
