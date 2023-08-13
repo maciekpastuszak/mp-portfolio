@@ -1,6 +1,7 @@
 import React from 'react';
 import Strength from '../Strength';
 import { strengthCard } from '@/constants';
+import TechIcon from '../TechIcon';
 
 const About = () => {
   return (
@@ -38,7 +39,7 @@ const About = () => {
             <div className="relative top-28 w-full">
               <div className="border">
                 <p>technologies</p> 
-                
+                <TechIcon />
               </div>
             </div>
 
