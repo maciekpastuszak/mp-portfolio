@@ -1,6 +1,11 @@
 import React from 'react'
 
-const TechIcon = () => {
+interface TechIconProps {
+    src: string,
+    title: string
+}
+
+const TechIcon: React.FC<TechIconProps> = ({src, title}) => {
   return (
     <div>TechIcon</div>
   )
