@@ -1,6 +1,6 @@
 import React from 'react';
 import Strength from '../Strength';
-import { strengthCard } from '@/constants';
+import { strengthCard, techIcons } from '@/constants';
 import TechIcon from '../TechIcon';
 
 const About = () => {
@@ -39,7 +39,10 @@ const About = () => {
             <div className="relative top-28 w-full">
               <div className="border">
                 <p>technologies</p> 
-                <TechIcon />
+                {techIcons.map((item, index) => (
+                  <TechIcon src={item.src} title={item.title} />
+                )
+                )}
               </div>
             </div>
 
