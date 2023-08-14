@@ -2,6 +2,7 @@ import React from 'react';
 import Strength from '../Strength';
 import { strengthCard, techIcons } from '@/constants';
 import TechIcon from '../TechIcon';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -9,6 +10,20 @@ const About = () => {
       <div className="w-100 bg-primary-dark">
         <div className="relative min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center ">
+
+            <div className="relative flex flex-col sm:flex-row">
+              <div className='flex flex-col lg:flex-row'>
+                <p className="text-secondary-blue">Highly accomplished manager and web developer with over 15 years 
+                  of experience leading teams and delivering successful 
+                  projects. Skilled in strategic planning, team building, and project management, 
+                  as well as in modern web development technologies. A creative problem-solver 
+                  with a strong work ethic and a passion for technology.</p>
+              </div>
+              <div className='flex flex-col lg:flex-row'>
+                <Image src="/MyImage.jpeg" alt="PortfolioImage" width={200} height={200}/>
+              </div>
+            </div>
+
             <div className="relative top-20 flex flex-col sm:flex-row">
               <div className='flex flex-col lg:flex-row'>
                 <Strength
