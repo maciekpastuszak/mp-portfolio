@@ -8,11 +8,11 @@ const About = () => {
   return (
     <section id="about">
       <div className="w-100 bg-primary-dark">
-        <div className="relative min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
-          <div className="flex flex-col w-full justify-center items-center ">
+        <div className="relative inset-x-0 top-28 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
+          <div className="flex flex-col w-full justify-center items-center border">
 
             <div className="relative flex flex-col sm:flex-row">
-              <div className='flex flex-col lg:flex-row'>
+              <div className='flex flex-col lg:flex-row w-1/2'>
                 <p className="text-secondary-blue">Highly accomplished manager and web developer with over 15 years 
                   of experience leading teams and delivering successful 
                   projects. Skilled in strategic planning, team building, and project management, 
