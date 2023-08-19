@@ -1,6 +1,11 @@
+import { SelectedPage } from '@/shared/types';
 import React from 'react'
 
-const Contact = () => {
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const Contact = ({ setSelectedPage }: Props) => {
   return (
     <section id="contact">
     <div className="w-100 bg-primary-dark">
