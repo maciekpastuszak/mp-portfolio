@@ -4,8 +4,13 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 import ScrollElement from 'react-scroll-element';
+import { SelectedPage } from '@/shared/types';
 
-const Hero = () => {
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const Hero = ({ setSelectedPage }: Props) => {
 
   const [showCursor1, setShowCursor1] = useState(true);
   const [showCursor2, setShowCursor2] = useState(false);

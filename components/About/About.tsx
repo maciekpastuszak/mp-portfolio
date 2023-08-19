@@ -3,10 +3,16 @@ import Strength from '../Strength';
 import { strengthCard, techIcons } from '@/constants';
 import TechIcon from '../TechIcon';
 import Image from 'next/image';
+import { SelectedPage } from '@/shared/types';
 
-const About = () => {
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const About = ({ setSelectedPage }: Props) => {
+
   return (
-    <section id="about">
+    <section id="about" className="min-h-full">
       <div className="w-100 bg-primary-dark">
         <div className="relative inset-x-0 top-24 mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center">
