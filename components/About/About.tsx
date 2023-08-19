@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="w-100 bg-primary-dark">
-        <div className="relative inset-x-0 top-28 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
+        <div className="relative inset-x-0 top-24 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center border">
 
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
@@ -20,11 +20,11 @@ const About = () => {
                   with a strong work ethic and a passion for technology.</p>
               </div>
               <div className='flex flex-col lg:flex-row'>
-                <Image src="/MyImage.jpeg" alt="PortfolioImage" width={200} height={200}/>
+                <Image src="/MyImage.png" alt="PortfolioImage" width={200} height={200}/>
               </div>
             </div>
 
-            <div className="relative top-20 flex flex-col sm:flex-row">
+            <div className="relative top-10 flex flex-col sm:flex-row">
               <div className='flex flex-col lg:flex-row'>
                 <Strength
                   icon={strengthCard[0].src} 
