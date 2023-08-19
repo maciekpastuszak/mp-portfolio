@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import TriangleLink from '../TriangleLink';
 import { AnimatePresence } from 'framer-motion';
 import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 import ScrollElement from 'react-scroll-element';
@@ -73,7 +72,7 @@ const Hero = () => {
       </div>
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
-        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 z-10 text-end">
+        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
           <div className="grid gap-y-3">
             <p className="font-medium text-6xl">
               <Typewriter 

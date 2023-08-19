@@ -51,7 +51,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="relative top-28 w-full">
+            <div className="relative top-20 w-full">
               <p>technologies</p> 
               <div className="border flex flex-wrap p-6">
                 {techIcons.map((item, index) => (
