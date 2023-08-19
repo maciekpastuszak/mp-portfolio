@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
 
         {/* HOME */}
-        <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
+        <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer w-[82px]">
           <a href="/#hero">
             <BiHomeAlt2 size={27} />
           </a>
