@@ -7,16 +7,24 @@ import { BiHomeAlt2 } from "react-icons/bi";
 import { CgMenuHotdog } from "react-icons/cg";
 import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
+import { SelectedPage } from "@/shared/types";
+
+type Props = {
+  isTopOfPage: boolean;
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
+};
 
 const navBackground =
   "bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20";
 
-  const variants = {
-    slideIn: { x: -200, ease: "easeIn", duration: 0.3 },
-    slideOut: { x: 200, ease: "easeIn", duration: 0.3 },
-  }
+const variants = {
+  slideIn: { x: -200, ease: "easeIn", duration: 0.3 },
+  slideOut: { x: 200, ease: "easeIn", duration: 0.3 },
+}
 
-const Navbar = () => {
+
+const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   return (
@@ -33,7 +41,13 @@ const Navbar = () => {
         {/* NAV LINKS */}
         <div className="flex items-center justify-between gap-8">
           {navLinks.map((link, index) => (
-            <NavItem key={index} href={link.href} label={link.text} />
+            <NavItem 
+              key={index} 
+              href={link.href} 
+              label={link.text} 
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           ))}
         </div>
 
