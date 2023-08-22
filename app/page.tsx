@@ -10,17 +10,30 @@ import Navbar from '@/components/Navbar';
 import { SelectedPage } from '@/shared/types';
 
 const HomePage = () => {
+
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Hero
   );
 
+  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
+    <div className="bg-primary-dark overflow-hidden">
+      <Navbar 
+        setSelectedPage={setSelectedPage}
+        selectedPage={selectedPage}
+        isTopOfPage={isTopOfPage}
+        />
+      <Hero setSelectedPage={setSelectedPage}/>
+      <div className="relative">
+        <About setSelectedPage={setSelectedPage}/>
+      </div>
+      <div className="relative">
+        <Portfolio setSelectedPage={setSelectedPage}/>
+      </div>
+      <div className="relative">
+        <Contact setSelectedPage={setSelectedPage}/>
+      </div>
     </div>
   );
 };
