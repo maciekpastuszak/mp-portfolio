@@ -96,7 +96,8 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
             >
               <div className="flex flex-col items-center gap-6 mt-6">
               {navLinks.map((link, index) => (
-                <NavItem key={index} href={link.href} label={link.text} />
+                <NavItem key={index} href={link.href} label={link.text} selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}/>
               ))}
               </div>
               <ul className="flex flex-col items-center my-8 gap-4">
