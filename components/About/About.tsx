@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section id="about">
-      <div className="w-100 bg-primary-dark">
+    <section id="about" className="min-h-screen bg-primary-dark">
+      <div className="w-100 bg-primary-dark py-24">
         <div className="relative inset-x-0 top-24 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center border">
 
@@ -51,16 +51,12 @@ const About = () => {
               </div>
             </div>
 
-            <div className="relative top-28 w-full">
-              <p>technologies</p> 
-              <div className="border flex flex-wrap p-6">
-                {techIcons.map((item, index) => (
-                  <div className="p-5">
-                     <TechIcon src={item.src} title={item.title} />
-                  </div>
-                )
-                )}
-              </div>
+            <div className="border flex justify-evenly flex-wrap py-24">
+              {techIcons.map((item, index) => (
+                <div className="p-3" key={index}>
+                  <TechIcon src={item.src} title={item.title} />
+                </div>
+              ))}
             </div>
 
           </div>
