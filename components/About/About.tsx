@@ -12,10 +12,10 @@ type Props = {
 const About = ({ setSelectedPage }: Props) => {
 
   return (
-    <section id="about">
-      <div className="w-100 bg-primary-dark">
-        <div className="relative inset-x-0 top-24 mx-auto w-5/6 flex items-start text-secondary-blue-300">
-          <div className="flex flex-col w-full justify-center items-center">
+    <section id="about" className="min-h-screen bg-primary-dark">
+      <div className="w-100 bg-primary-dark py-24">
+        <div className="relative inset-x-0 top-24 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
+          <div className="flex flex-col w-full justify-center items-center border">
 
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
               <div className='flex flex-col lg:flex-row sm:w-1/2 w-full h-auto'>
@@ -57,16 +57,12 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <div className="w-full">
-              <p>technologies</p> 
-              <div className="border flex flex-wrap p-6">
-                {techIcons.map((item, index) => (
-                  <div className="p-5">
-                     <TechIcon src={item.src} title={item.title} />
-                  </div>
-                )
-                )}
-              </div>
+            <div className="border flex flex-wrap py-24">
+              {techIcons.map((item, index) => (
+                <div className="p-3" key={index}>
+                  <TechIcon src={item.src} title={item.title} />
+                </div>
+              ))}
             </div>
 
           </div>
