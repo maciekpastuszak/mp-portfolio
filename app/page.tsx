@@ -25,15 +25,9 @@ const HomePage = () => {
         isTopOfPage={isTopOfPage}
         />
       <Hero setSelectedPage={setSelectedPage}/>
-      <div className="relative">
-        <About setSelectedPage={setSelectedPage}/>
-      </div>
-      <div className="relative">
-        <Portfolio setSelectedPage={setSelectedPage}/>
-      </div>
-      <div className="relative">
-        <Contact setSelectedPage={setSelectedPage}/>
-      </div>
+      <About setSelectedPage={setSelectedPage}/>
+      <Portfolio setSelectedPage={setSelectedPage}/>
+      <Contact setSelectedPage={setSelectedPage}/>
     </div>
   );
 };
