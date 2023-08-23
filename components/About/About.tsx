@@ -57,7 +57,7 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <div className="relative top-20 w-full">
+            <div className="w-full">
               <p>technologies</p> 
               <div className="border flex flex-wrap p-6">
                 {techIcons.map((item, index) => (
