@@ -7,8 +7,10 @@ type Props = {
 
 const Contact = ({ setSelectedPage }: Props) => {
   return (
-    <section id="contact">
-      Kontakt
+    <section id="about" className="min-h-screen bg-primary-dark">
+      <div className="w-100 bg-primary-dark py-24"> 
+       Kontakt
+      </div>
   </section>
   )
 }
