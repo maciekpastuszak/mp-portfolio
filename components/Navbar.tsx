@@ -26,10 +26,10 @@ const variants = {
 
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "" : "bg-accent-yellow drop-shadow";
+  const navbarBackground = isTopOfPage ? "" : `md:${navBackground}`;
 
   return (
-    <nav className={`${navbarBackground} fixed top-0 z-30 w-full py-6`}>
+    <nav className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}>
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
 
         {/* HOME */}
