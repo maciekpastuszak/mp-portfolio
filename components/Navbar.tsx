@@ -9,6 +9,8 @@ import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
 
+import { navVariants } from '../utils/motion';
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -29,7 +31,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const navbarBackground = isTopOfPage ? "" : `md:${navBackground}`;
 
   return (
-    <nav className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}>
+    <motion.nav 
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}>
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
 
         {/* HOME */}
@@ -123,7 +129,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           )}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
