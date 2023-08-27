@@ -12,16 +12,26 @@ type Props = {
 
 const Hero = ({ setSelectedPage }: Props) => {
 
-  const [showCursor1, setShowCursor1] = useState(true);
+  const [showCursor1, setShowCursor1] = useState(false);
   const [showCursor2, setShowCursor2] = useState(false);
   const [showCursor3, setShowCursor3] = useState(false);
   const [showCursor4, setShowCursor4] = useState(false);
   const [showCursor5, setShowCursor5] = useState(false);
+  const [showFirstLine, setShowFirstLine] = useState(false);
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showName, setShowName] = useState(false);
   const [showThirdLine, setShowThirdLine] = useState(false);
   const [showPositions, setShowPositions] = useState(false);
   const [showLink, setShowLink] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor1(true);
+      setShowFirstLine(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -64,7 +74,7 @@ const Hero = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="hero">
-      {/* <div className="absolute inset-0">
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -74,12 +84,13 @@ const Hero = ({ setSelectedPage }: Props) => {
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div> */}
+      </div>
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
           <div className="grid gap-y-3">
             <p className="font-medium text-6xl">
+              {showFirstLine && (
               <Typewriter 
                 words={["Hello there!"]}
                 cursor={showCursor1}
@@ -88,6 +99,7 @@ const Hero = ({ setSelectedPage }: Props) => {
                 deleteSpeed={50}
                 delaySpeed={1000}
               />
+              )}
             </p>
             {showSecondLine && (
               <>
