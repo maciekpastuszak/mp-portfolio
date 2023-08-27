@@ -28,7 +28,7 @@ const Hero = ({ setSelectedPage }: Props) => {
     const timer = setTimeout(() => {
       setShowCursor1(true);
       setShowFirstLine(true);
-    }, 700);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
