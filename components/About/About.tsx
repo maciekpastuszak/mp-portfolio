@@ -56,9 +56,10 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <div className="border flex flex-wrap py-24">
+            <div className="relative border border-accent-yellow rounded-lg flex flex-wrap mt-6 mb-16 z-20">
+              <p className="absolute left-6 -top-3 z-30 bg-primary-dark px-3 font-bold">Technology stack</p>
               {techIcons.map((item, index) => (
-                <div className="p-3" key={index}>
+                <div className="p-5" key={index}>
                   <TechIcon src={item.src} title={item.title} />
                 </div>
               ))}
