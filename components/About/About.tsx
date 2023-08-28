@@ -25,7 +25,7 @@ const About = ({ setSelectedPage }: Props) => {
                   with a strong work ethic and a passion for technology.</p>
               </div>
               <div className='flex flex-col lg:flex-row'>
-                <Image src="/MyImage.png" alt="PortfolioImage" width={250} height={250}/>
+                <Image src="/MyImage.png" alt="PortfolioImage" width={250} height={250} style={{ width: 250, height: 250 }}/>
               </div>
             </div>
 
