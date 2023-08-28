@@ -16,7 +16,7 @@ const Strength: React.FC<StrengthProps> = ({icon, title, content}) => {
             width={89} 
             height={82} 
             alt={title} 
-            style={{ width: 36, height: 36 }}
+            style={{ width: 89, height: 82 }}
             />
             <h2 className="font-bold my-2">{title}</h2>
             <p className="text-sm font-light">{content}</p>
