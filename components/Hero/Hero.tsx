@@ -62,7 +62,7 @@ const Hero = ({ setSelectedPage }: Props) => {
       setShowCursor4(true);
       setShowThirdLine(true);
       setShowLink(true);
-    }, 6000)
+    }, 5800)
   }, []);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const Hero = ({ setSelectedPage }: Props) => {
       setShowCursor4(false);
       setShowCursor5(true);
       setShowPositions(true);
-    }, 6500)
+    }, 6200)
   }, []);
 
   return (
@@ -90,7 +90,7 @@ const Hero = ({ setSelectedPage }: Props) => {
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
           <div className="grid gap-y-3">
-            <p className="font-medium text-6xl">
+            <p className="font-medium md:text-6xl text-4xl">
               {showFirstLine && (
               <Typewriter 
                 words={["Hello there!"]}
@@ -104,7 +104,7 @@ const Hero = ({ setSelectedPage }: Props) => {
             </p>
             {showSecondLine && (
               <>
-              <p className="font-normal text-4xl">
+              <p className="font-normal md:text-4xl text-3xl">
               <Typewriter 
                 words={[`My name is`]}
                 cursor={showCursor2}
@@ -133,7 +133,7 @@ const Hero = ({ setSelectedPage }: Props) => {
             )}
             {showThirdLine && (
               
-              <p className="font-light text-3xl">
+              <p className="font-light md:text-3xl text-2xl">
                 <Typewriter 
                 words={["I’m a "]}
                 cursor={showCursor4}
@@ -165,7 +165,7 @@ const Hero = ({ setSelectedPage }: Props) => {
         variants={fadeIn}
         initial="hidden"
         whileInView="show"
-        className="absolute left-24 ease-in">
+        className="absolute md:left-24 left-12 ease-in">
           <a href="#about">
             <ScrollElement type={"chevron-bouncing"} text={"about"} colorIcon={"#FFDF38"} colorText={"#fff"} />
           </a>
