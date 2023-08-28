@@ -28,7 +28,7 @@ const variants = {
 
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "" : `md:bg-gray-500 md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-20`;
+  const navbarBackground = isTopOfPage ? "" : `md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-20`;
 
   return (
     <motion.nav 

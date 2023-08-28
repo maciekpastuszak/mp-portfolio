@@ -13,13 +13,12 @@ const About = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="about" className="min-h-screen bg-primary-dark">
-      <div className="w-100 bg-primary-dark py-24">
-        <div className="relative inset-x-0 top-24 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
+      <div className="w-100 bg-primary-dark py-8">
+        <div className="relative inset-x-0 top-16 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center border">
-
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
               <div className='flex flex-col lg:flex-row sm:w-1/2 w-full h-auto'>
-                <p className="text-secondary-blue text-center pe-4">Highly accomplished manager and web developer with over 15 years 
+                <p className="text-secondary-blue text-center md:pe-4 mb-5">Highly accomplished manager and web developer with over 15 years 
                   of experience leading teams and delivering successful 
                   projects. Skilled in strategic planning, team building, and project management, 
                   as well as in modern web development technologies. A creative problem-solver 
