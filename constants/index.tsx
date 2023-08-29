@@ -93,3 +93,13 @@ export const techIcons = [
     title: 'TypeScript'
   },
 ]
+
+export const portfolioItems = [
+  {
+    webUrl: '/icon-atlassian.svg',
+    codeUrl: '/bla.html',
+    imgSrc: '/image',
+    title: 'Atlassian',
+    description: "Lorem ipsum"
+  },
+]
