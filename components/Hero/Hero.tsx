@@ -62,7 +62,7 @@ const Hero = ({ setSelectedPage }: Props) => {
       setShowCursor4(true);
       setShowThirdLine(true);
       setShowLink(true);
-    }, 5800)
+    }, 5300)
   }, []);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const Hero = ({ setSelectedPage }: Props) => {
       setShowCursor4(false);
       setShowCursor5(true);
       setShowPositions(true);
-    }, 6200)
+    }, 5900)
   }, []);
 
   return (
