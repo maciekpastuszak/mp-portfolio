@@ -7,9 +7,9 @@ type Props = {
 
 const Portfolio = ({ setSelectedPage }: Props) => {
   return (
-    <section id="portfolio" className="min-h-screen bg-primary-dark border border-red-400">
-      <div className="mx-auto w-5/6 flex items-center">
-        <div className="grid gap-y-3">
+    <section id="portfolio" className="min-h-screen bg-primary-dark">
+      <div className="mx-auto w-5/6 flex items-center  border border-red-400">
+        <div className="container flex flex-row wrap">
         <p className="text-white">test</p>
         </div>
       </div>
