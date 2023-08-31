@@ -96,10 +96,80 @@ export const techIcons = [
 
 export const portfolioItems = [
   {
-    webUrl: '/icon-atlassian.svg',
-    codeUrl: '/bla.html',
-    imgSrc: '/image',
-    title: 'Atlassian',
-    description: "Lorem ipsum"
+    webUrl: 'https://karolinapastuszak.pl',
+    codeUrl: 'https://github.com/maciekpastuszak/karolina-photo',
+    imgSrc: '/screen_karolina_photo.jpg',
+    title: 'Karolina Photography',
+    description: "A porfolio website of a family photographer"
+  },
+  {
+    webUrl: 'https://dobrawrozka.edu.pl',
+    codeUrl: 'https://github.com/maciekpastuszak/dobra-wrozka-v2',
+    imgSrc: '/screen_dobra_wrozka.jpg',
+    title: 'Dobra Wrózka',
+    description: "A kindergarten website"
+  },
+  {
+    webUrl: 'https://gericht-restaurant.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/Gerich-Restaurant',
+    imgSrc: '/screen_gericht.jpg',
+    title: 'Gericht Restaurant',
+    description: "A beautiful and modern restaurant front page"
+  },
+  {
+    webUrl: 'https://gpt3.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/GPT3-Technology',
+    imgSrc: '/screen_gpt3.jpg',
+    title: 'GPT-3 Technology',
+    description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS"
+  },
+  {
+    webUrl: 'https://twitter.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/twitter-clone',
+    imgSrc: '/screen_twitter.jpg',
+    title: 'Twitter Clone',
+    description: "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB"
+  },
+  {
+    webUrl: 'http://evo-gym.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
+    imgSrc: '/screen_evo_gym.jpg',
+    title: 'Evo Gym',
+    description: "A modern and elegant UI/UX fitness center front page"
+  },
+  {
+    webUrl: 'http://dallee.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/dallee',
+    imgSrc: '/screen_dallee.jpg',
+    title: 'Dallee',
+    description: "A social media platform to create and share DALL-E generated images"
+  },
+  {
+    webUrl: 'http://jobs.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/react_native_jobs',
+    imgSrc: '/screen_jobs.jpg',
+    title: 'Jobs',
+    description: "A React Native job search application"
+  },
+  {
+    webUrl: 'http://flexibble.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/next13-flexibble',
+    imgSrc: '/screen_flexibble.jpg',
+    title: 'Flexibble',
+    description: ""
+  },
+  {
+    webUrl: 'https://promptopia.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/promptopia',
+    imgSrc: '/screen_promptopia.jpg',
+    title: 'Promptopia',
+    description: "A reliable OpenAI prompts sharing platform"
+  },
+  {
+    webUrl: 'https://promptopia.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/SpotifyAI',
+    imgSrc: '/screen_promptopia.jpg',
+    title: 'Promptopia',
+    description: "A reliable OpenAI prompts sharing platform"
   },
 ]
