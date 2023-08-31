@@ -166,10 +166,59 @@ export const portfolioItems = [
     description: "A reliable OpenAI prompts sharing platform"
   },
   {
-    webUrl: 'https://promptopia.maciejpastuszak.pl/',
+    webUrl: 'https://spotifyAI.maciejpastuszak.pl/',
     codeUrl: 'https://github.com/maciekpastuszak/SpotifyAI',
-    imgSrc: '/screen_promptopia.jpg',
-    title: 'Promptopia',
-    description: "A reliable OpenAI prompts sharing platform"
+    imgSrc: '/screen_spotifyAI.jpg',
+    title: 'SpotifyAI',
+    description: "An AI powered playlist generator"
   },
+  {
+    webUrl: 'https://codereviewer.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/CodeReviewer',
+    imgSrc: '/screen_code_reviewer.jpg',
+    title: 'Code Reviewer',
+    description: ""
+  },
+  {
+    webUrl: 'https://color-find.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/color-palette-generator',
+    imgSrc: '/screen_color_find.jpg',
+    title: 'ColorFind',
+    description: "A color palette generator usign OpenAi"
+  },
+  {
+    webUrl: 'https://krypt.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/Krypt',
+    imgSrc: '/screen_krypt.jpg',
+    title: 'Krypt',
+    description: "A Web3.0/Ethereum blockchain app for cryptocurrency transfer."
+  },
+  {
+    webUrl: 'https://yelpcamp.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/YelpCamp',
+    imgSrc: '/screen_yelpcamp.jpg',
+    title: 'YelpCamp',
+    description: "My first Web Developer Bootcamp application"
+  },
+  {
+    webUrl: 'https://hangman.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/React-Hangman',
+    imgSrc: '/screen_hangman.jpg',
+    title: 'React Hangman',
+    description: "A simple react-typescript app based on a popular children game"
+  },
+  {
+    webUrl: 'https://hoobank.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/bank_modern_app',
+    imgSrc: '/screen_hoobank.jpg',
+    title: 'Hoo Bank',
+    description: "a modern and elegant UI/UX business front page"
+  },
+  {
+    webUrl: 'https://dsurv.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/dsurv',
+    imgSrc: '/screen_dsurv.jpg',
+    title: 'dsurv',
+    description: "my first dfinity token application"
+  }
 ]
