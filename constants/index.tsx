@@ -151,13 +151,13 @@ export const portfolioItems = [
     title: 'Jobs',
     description: "A React Native job search application"
   },
-  {
-    webUrl: 'http://flexibble.maciejpastuszak.pl/',
-    codeUrl: 'https://github.com/maciekpastuszak/next13-flexibble',
-    imgSrc: '/screen_flexibble.jpg',
-    title: 'Flexibble',
-    description: ""
-  },
+  // {
+  //   webUrl: 'http://flexibble.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/next13-flexibble',
+  //   imgSrc: '/screen_flexibble.jpg',
+  //   title: 'Flexibble',
+  //   description: ""
+  // },
   {
     webUrl: 'https://promptopia.maciejpastuszak.pl/',
     codeUrl: 'https://github.com/maciekpastuszak/promptopia',
@@ -168,7 +168,7 @@ export const portfolioItems = [
   {
     webUrl: 'https://spotifyAI.maciejpastuszak.pl/',
     codeUrl: 'https://github.com/maciekpastuszak/SpotifyAI',
-    imgSrc: '/screen_spotifyAI.jpg',
+    imgSrc: '/screen_spotifyai.jpg',
     title: 'SpotifyAI',
     description: "An AI powered playlist generator"
   },
