@@ -12,8 +12,7 @@ type Props = {
 const About = ({ setSelectedPage }: Props) => {
 
   return (
-    <section id="about" className="min-h-screen bg-primary-dark">
-      <div className="w-100 bg-primary-dark py-8">
+    <section id="about" className="min-h-screen w-100 py-8 bg-primary-dark">
         <div className="relative inset-x-0 top-16 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center">
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
@@ -69,7 +68,6 @@ const About = ({ setSelectedPage }: Props) => {
 
           </div>
         </div>
-      </div>
     </section>
   )
 }
