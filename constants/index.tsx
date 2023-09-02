@@ -172,13 +172,13 @@ export const portfolioItems = [
     title: 'SpotifyAI',
     description: "An AI powered playlist generator"
   },
-  {
-    webUrl: 'https://codereviewer.maciejpastuszak.pl/',
-    codeUrl: 'https://github.com/maciekpastuszak/CodeReviewer',
-    imgSrc: '/screen_code_reviewer.jpg',
-    title: 'Code Reviewer',
-    description: ""
-  },
+  // {
+  //   webUrl: 'https://codereviewer.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/CodeReviewer',
+  //   imgSrc: '/screen_code_reviewer.jpg',
+  //   title: 'Code Reviewer',
+  //   description: ""
+  // },
   {
     webUrl: 'https://color-find.maciejpastuszak.pl/',
     codeUrl: 'https://github.com/maciekpastuszak/color-palette-generator',
@@ -214,11 +214,11 @@ export const portfolioItems = [
     title: 'Hoo Bank',
     description: "a modern and elegant UI/UX business front page"
   },
-  {
-    webUrl: 'https://dsurv.maciejpastuszak.pl/',
-    codeUrl: 'https://github.com/maciekpastuszak/dsurv',
-    imgSrc: '/screen_dsurv.jpg',
-    title: 'dsurv',
-    description: "my first dfinity token application"
-  }
+  // {
+  //   webUrl: 'https://dsurv.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/dsurv',
+  //   imgSrc: '/screen_dsurv.jpg',
+  //   title: 'dsurv',
+  //   description: "my first dfinity token application"
+  // }
 ]
