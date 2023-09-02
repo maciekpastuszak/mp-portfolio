@@ -13,7 +13,14 @@ const Portfolio = ({ setSelectedPage }: Props) => {
       <div className="mx-auto w-5/6 py-12 flex justify-center border border-red-400">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-4/5 place-content-center">
           {portfolioItems.map((item, index) => (
-            <PortfolioCard key={index} />
+            <PortfolioCard 
+              key={index} 
+              webUrl={item.webUrl}
+              codeUrl={item.codeUrl}
+              imgSrc={item.imgSrc}
+              title={item.title}
+              description={item.description}
+              />
           ))}
         </div>
       </div>
