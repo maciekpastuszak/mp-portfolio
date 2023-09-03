@@ -11,8 +11,15 @@ type Props = {
 
 const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => {
   return (
-    <div className="w-[400px] h-[200]">
+    <div className="
+      w-[400px] 
+      h-[200] 
+      transition-opacity 
+      duration-300 
+      ease-in 
+      hover:opacity-25">
         <img src={imgSrc} alt={title} />
+        <button></button>
     </div>
   )
 }
