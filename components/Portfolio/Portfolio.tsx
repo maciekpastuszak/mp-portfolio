@@ -10,13 +10,14 @@ type Props = {
 const Portfolio = ({ setSelectedPage }: Props) => {
   return (
     <section id="portfolio" className="min-h-screen w-100 py-8 bg-primary-dark">
-      <div className="mx-auto w-5/6 py-12 flex justify-center">
+      <div className="mx-auto py-12 flex justify-center">
         <div className="
-          grid 
+          grid
+          grid-cols-1 
           md:grid-cols-2 
-          lg:grid-cols-3 
-          lg:max-w-[1200px]
-          
+          xl:grid-cols-3
+          md:w-[800px]
+          xl:w-[1200px]
           place-content-center border border-red-400">
           {portfolioItems.map((item, index) => (
             <PortfolioCard 
