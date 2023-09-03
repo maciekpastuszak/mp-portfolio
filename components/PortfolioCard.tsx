@@ -1,5 +1,7 @@
+"use client"
+
 import { portfolioItems } from '@/constants';
-import React from 'react';
+import React, { useState } from 'react';
 
 type Props = {
   webUrl: string,
@@ -10,6 +12,12 @@ type Props = {
 };
 
 const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => {
+  const [hovered, setHovered] = useState(false);
+
+  const toggleHover = () => {
+    setHovered(!hovered);
+  }
+
   return (
     <div className="
       w-[400px] 
