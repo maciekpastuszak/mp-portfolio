@@ -11,7 +11,7 @@ type Props = {
 
 const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => {
   return (
-    <div className="w-[716px] h-[345] m-4">
+    <div className="w-[616px] h-[245] m-4">
         <img src={imgSrc} alt={title} />
     </div>
   )
