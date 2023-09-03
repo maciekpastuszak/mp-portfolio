@@ -109,27 +109,27 @@ export const portfolioItems = [
     title: 'Dobra Wrózka',
     description: "A kindergarten website"
   },
-  // {
-  //   webUrl: 'https://gericht-restaurant.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/Gerich-Restaurant',
-  //   imgSrc: '/screen_gericht.jpg',
-  //   title: 'Gericht Restaurant',
-  //   description: "A beautiful and modern restaurant front page"
-  // },
-  // {
-  //   webUrl: 'https://gpt3.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/GPT3-Technology',
-  //   imgSrc: '/screen_gpt3.jpg',
-  //   title: 'GPT-3 Technology',
-  //   description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS"
-  // },
-  // {
-  //   webUrl: 'https://twitter.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/twitter-clone',
-  //   imgSrc: '/screen_twitter.jpg',
-  //   title: 'Twitter Clone',
-  //   description: "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB"
-  // },
+  {
+    webUrl: 'https://gericht-restaurant.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/Gerich-Restaurant',
+    imgSrc: '/screen_gericht.jpg',
+    title: 'Gericht Restaurant',
+    description: "A beautiful and modern restaurant front page"
+  },
+  {
+    webUrl: 'https://gpt3.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/GPT3-Technology',
+    imgSrc: '/screen_gpt3.jpg',
+    title: 'GPT-3 Technology',
+    description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS"
+  },
+  {
+    webUrl: 'https://twitter.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/twitter-clone',
+    imgSrc: '/screen_twitter.jpg',
+    title: 'Twitter Clone',
+    description: "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB"
+  },
   // {
   //   webUrl: 'http://evo-gym.maciejpastuszak.pl/',
   //   codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
