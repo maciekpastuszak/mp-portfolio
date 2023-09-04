@@ -15,7 +15,8 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
   const [hovered, setHovered] = useState(false);
 
   const toggleHover = () => {
-    setHovered(!hovered);
+    setHovered((prevHovered) => !prevHovered);
+    console.log('hovered:', hovered);
   }
 
   return (
@@ -31,7 +32,7 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
       onMouseLeave={toggleHover}>
         <img src={imgSrc} alt={title} />
         {hovered && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300 ease-in opacity-0 hover:opacity-100">
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300 ease-in opacity-0">
           <button className="bg-blue-500 text-white px-4 py-2 m-2 hover:bg-blue-600 z-10">
             Code
           </button>
