@@ -11,6 +11,8 @@ type Props = {
   description: string
 };
 
+const btnBackground = "bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100";
+
 const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => {
   const [hovered, setHovered] = useState(false);
 
@@ -22,6 +24,7 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
   return (
     <div 
       className="
+      relative
         w-[400px] 
         h-[200] 
         transition-opacity 
@@ -31,16 +34,17 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}>
         <img src={imgSrc} alt={title} />
-        {hovered && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300 ease-in opacity-0">
-          <button className="bg-blue-500 text-white px-4 py-2 m-2 hover:bg-blue-600 z-10">
-            Code
-          </button>
-          <button className="bg-green-500 text-white px-4 py-2 m-2 hover:bg-green-600 z-10">
-            Link
-          </button>
-        </div>
-      )}
+    {hovered && (
+    <div className="absolute top-24 inset-0 flex flex-row justify-center items-center">
+      <button className={`${btnBackground} text-white px-4 py-1 m-2 z-10`}>
+        Code
+      </button>
+      <button className={`${btnBackground} text-white px-4 py-1 m-2 z-10`}>
+        Link
+      </button>
+    </div>
+    )}
+ 
     </div>
   )
 }
