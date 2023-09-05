@@ -51,7 +51,8 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
             <NavItem 
               key={index} 
               href={link.href} 
-              label={link.text} 
+              label={link.text}
+              page={link.text} 
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -103,7 +104,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
             >
               <div className="flex flex-col items-center gap-6 mt-6">
               {navLinks.map((link, index) => (
-                <NavItem key={index} href={link.href} label={link.text} selectedPage={selectedPage}
+                <NavItem key={index} href={link.href} label={link.text} page={link.text} selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}/>
               ))}
               </div>
