@@ -39,6 +39,9 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
               <p>{title}</p>
               <div className="absolute w-[40px] h-1 bg-white top-14"></div>
             </div>
+            <div className="absolute top-20 flex flex-col w-full">
+              <p className="text-white text-sm text-center">{description}</p>
+            </div>
             <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
               <button className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
                 Code
