@@ -31,9 +31,9 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
         <img
           src={imgSrc}
           alt={title}
-          className={`transition-opacity duration-300 ease-in ${hovered ? 'opacity-50' : 'opacity-100'}`}
+          className={`transition-opacity duration-300 ease-in ${hovered ? 'opacity-25' : 'opacity-100'}`}
         />
-        {/* {hovered && ( */}
+        {hovered && (
           <>
             <div className="absolute bottom-32 text-white inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
               <p>{title}</p>
@@ -51,7 +51,7 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
               </button>
             </div>
             </>
-        {/*)}*/}
+        )}
     </div>
   )
 }
