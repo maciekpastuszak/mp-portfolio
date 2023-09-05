@@ -35,8 +35,10 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
         />
         {/* {hovered && ( */}
           <>
-            <div className="absolute bottom-32 text-white inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">{title}</div>
-
+            <div className="absolute bottom-32 text-white inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
+              <p>{title}</p>
+              <div className="absolute w-[40px] h-1 bg-white top-14"></div>
+            </div>
             <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
               <button className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
                 Code
