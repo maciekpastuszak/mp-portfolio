@@ -27,27 +27,26 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >
-      <div>
+
         <img
           src={imgSrc}
           alt={title}
           className={`transition-opacity duration-300 ease-in ${hovered ? 'opacity-50' : 'opacity-100'}`}
         />
-        {hovered && (
-          <div className="relative">
-            <div className="absolute text-white ">{title}</div>
+        {/* {hovered && ( */}
+          <>
+            <div className="absolute bottom-32 text-white inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">{title}</div>
 
-            <div className="absolute inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
-              <button className={`${btnBackground} text-white px-4 py-1 m-2 z-10`}>
+            <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
+              <button className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
                 Code
               </button>
-              <button className={`${btnBackground} text-white px-4 py-1 m-2 z-10`}>
+              <button className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
                 Link
               </button>
             </div>
-          </div>
-        )}
-      </div>
+            </>
+        {/*)}*/}
     </div>
   )
 }
