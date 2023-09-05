@@ -130,95 +130,95 @@ export const portfolioItems = [
     title: 'Twitter Clone',
     description: "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB"
   },
+  {
+    webUrl: 'http://evo-gym.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
+    imgSrc: '/screen_evo_gym.jpg',
+    title: 'Evo Gym',
+    description: "A modern and elegant UI/UX fitness center front page"
+  },
+  {
+    webUrl: 'http://dallee.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/dallee',
+    imgSrc: '/screen_dallee.jpg',
+    title: 'Dallee',
+    description: "A social media platform to create and share DALL-E generated images"
+  },
+  {
+    webUrl: 'http://jobs.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/react_native_jobs',
+    imgSrc: '/screen_jobs.jpg',
+    title: 'Jobs',
+    description: "A React Native job search application"
+  },
   // {
-  //   webUrl: 'http://evo-gym.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
-  //   imgSrc: '/screen_evo_gym.jpg',
-  //   title: 'Evo Gym',
-  //   description: "A modern and elegant UI/UX fitness center front page"
+  //   webUrl: 'http://flexibble.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/next13-flexibble',
+  //   imgSrc: '/screen_flexibble.jpg',
+  //   title: 'Flexibble',
+  //   description: ""
   // },
+  {
+    webUrl: 'https://promptopia.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/promptopia',
+    imgSrc: '/screen_promptopia.jpg',
+    title: 'Promptopia',
+    description: "A reliable OpenAI prompts sharing platform"
+  },
+  {
+    webUrl: 'https://spotifyAI.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/SpotifyAI',
+    imgSrc: '/screen_spotifyai.jpg',
+    title: 'SpotifyAI',
+    description: "An AI powered playlist generator"
+  },
   // {
-  //   webUrl: 'http://dallee.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/dallee',
-  //   imgSrc: '/screen_dallee.jpg',
-  //   title: 'Dallee',
-  //   description: "A social media platform to create and share DALL-E generated images"
+  //   webUrl: 'https://codereviewer.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/CodeReviewer',
+  //   imgSrc: '/screen_code_reviewer.jpg',
+  //   title: 'Code Reviewer',
+  //   description: ""
   // },
+  {
+    webUrl: 'https://color-find.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/color-palette-generator',
+    imgSrc: '/screen_color_find.jpg',
+    title: 'ColorFind',
+    description: "A color palette generator usign OpenAi"
+  },
+  {
+    webUrl: 'https://krypt.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/Krypt',
+    imgSrc: '/screen_krypt.jpg',
+    title: 'Krypt',
+    description: "A Web3.0/Ethereum blockchain app for cryptocurrency transfer."
+  },
+  {
+    webUrl: 'https://yelpcamp.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/YelpCamp',
+    imgSrc: '/screen_yelpcamp.jpg',
+    title: 'YelpCamp',
+    description: "My first Web Developer Bootcamp application"
+  },
+  {
+    webUrl: 'https://hangman.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/React-Hangman',
+    imgSrc: '/screen_hangman.jpg',
+    title: 'React Hangman',
+    description: "A simple react-typescript app based on a popular children game"
+  },
+  {
+    webUrl: 'https://hoobank.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/bank_modern_app',
+    imgSrc: '/screen_hoobank.jpg',
+    title: 'Hoo Bank',
+    description: "a modern and elegant UI/UX business front page"
+  },
   // {
-  //   webUrl: 'http://jobs.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/react_native_jobs',
-  //   imgSrc: '/screen_jobs.jpg',
-  //   title: 'Jobs',
-  //   description: "A React Native job search application"
-  // },
-  // // {
-  // //   webUrl: 'http://flexibble.maciejpastuszak.pl/',
-  // //   codeUrl: 'https://github.com/maciekpastuszak/next13-flexibble',
-  // //   imgSrc: '/screen_flexibble.jpg',
-  // //   title: 'Flexibble',
-  // //   description: ""
-  // // },
-  // {
-  //   webUrl: 'https://promptopia.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/promptopia',
-  //   imgSrc: '/screen_promptopia.jpg',
-  //   title: 'Promptopia',
-  //   description: "A reliable OpenAI prompts sharing platform"
-  // },
-  // {
-  //   webUrl: 'https://spotifyAI.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/SpotifyAI',
-  //   imgSrc: '/screen_spotifyai.jpg',
-  //   title: 'SpotifyAI',
-  //   description: "An AI powered playlist generator"
-  // },
-  // // {
-  // //   webUrl: 'https://codereviewer.maciejpastuszak.pl/',
-  // //   codeUrl: 'https://github.com/maciekpastuszak/CodeReviewer',
-  // //   imgSrc: '/screen_code_reviewer.jpg',
-  // //   title: 'Code Reviewer',
-  // //   description: ""
-  // // },
-  // {
-  //   webUrl: 'https://color-find.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/color-palette-generator',
-  //   imgSrc: '/screen_color_find.jpg',
-  //   title: 'ColorFind',
-  //   description: "A color palette generator usign OpenAi"
-  // },
-  // {
-  //   webUrl: 'https://krypt.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/Krypt',
-  //   imgSrc: '/screen_krypt.jpg',
-  //   title: 'Krypt',
-  //   description: "A Web3.0/Ethereum blockchain app for cryptocurrency transfer."
-  // },
-  // {
-  //   webUrl: 'https://yelpcamp.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/YelpCamp',
-  //   imgSrc: '/screen_yelpcamp.jpg',
-  //   title: 'YelpCamp',
-  //   description: "My first Web Developer Bootcamp application"
-  // },
-  // {
-  //   webUrl: 'https://hangman.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/React-Hangman',
-  //   imgSrc: '/screen_hangman.jpg',
-  //   title: 'React Hangman',
-  //   description: "A simple react-typescript app based on a popular children game"
-  // },
-  // {
-  //   webUrl: 'https://hoobank.maciejpastuszak.pl/',
-  //   codeUrl: 'https://github.com/maciekpastuszak/bank_modern_app',
-  //   imgSrc: '/screen_hoobank.jpg',
-  //   title: 'Hoo Bank',
-  //   description: "a modern and elegant UI/UX business front page"
-  // },
-  // // {
-  // //   webUrl: 'https://dsurv.maciejpastuszak.pl/',
-  // //   codeUrl: 'https://github.com/maciekpastuszak/dsurv',
-  // //   imgSrc: '/screen_dsurv.jpg',
-  // //   title: 'dsurv',
-  // //   description: "my first dfinity token application"
-  // // }
+  //   webUrl: 'https://dsurv.maciejpastuszak.pl/',
+  //   codeUrl: 'https://github.com/maciekpastuszak/dsurv',
+  //   imgSrc: '/screen_dsurv.jpg',
+  //   title: 'dsurv',
+  //   description: "my first dfinity token application"
+  // }
 ]
