@@ -4,6 +4,7 @@ import { strengthCard, techIcons } from '@/constants';
 import TechIcon from '../TechIcon';
 import Image from 'next/image';
 import { SelectedPage } from '@/shared/types';
+import Header from '../Header';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -29,6 +30,10 @@ const About = ({ setSelectedPage }: Props) => {
                 <p className="text-secondary-blue text-sm lg:text-base text-center sm:text-start md:ps-4 mt-5 mb-5"> A creative problem-solver 
                   with a strong work ethic and a passion for technology. My commitment to continuous learning and innovation ensures that I consistently deliver cutting-edge solutions to clients and exceed their expectations.</p>
               </div>
+            </div>
+
+            <div>
+              <Header title="Strengths" />
             </div>
 
             <div className="top-10 flex flex-col sm:flex-row my-5">
