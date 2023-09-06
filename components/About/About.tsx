@@ -32,7 +32,7 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <div>
+            <div className="flex text-center mt-8 mb-4">
               <Header title="Strengths" />
             </div>
 
