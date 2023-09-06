@@ -110,6 +110,13 @@ export const portfolioItems = [
     description: "A kindergarten website"
   },
   {
+    webUrl: 'http://evo-gym.maciejpastuszak.pl/',
+    codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
+    imgSrc: '/screen_evo_gym.jpg',
+    title: 'Evo Gym',
+    description: "A modern and elegant UI/UX fitness center front page"
+  },
+  {
     webUrl: 'https://gericht-restaurant.maciejpastuszak.pl/',
     codeUrl: 'https://github.com/maciekpastuszak/Gerich-Restaurant',
     imgSrc: '/screen_gericht.jpg',
@@ -129,13 +136,6 @@ export const portfolioItems = [
     imgSrc: '/screen_twitter.jpg',
     title: 'Twitter Clone',
     description: "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB"
-  },
-  {
-    webUrl: 'http://evo-gym.maciejpastuszak.pl/',
-    codeUrl: 'https://github.com/maciekpastuszak/gym-typescript',
-    imgSrc: '/screen_evo_gym.jpg',
-    title: 'Evo Gym',
-    description: "A modern and elegant UI/UX fitness center front page"
   },
   {
     webUrl: 'http://dallee.maciejpastuszak.pl/',

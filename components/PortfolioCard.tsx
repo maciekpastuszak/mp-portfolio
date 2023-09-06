@@ -43,10 +43,10 @@ const PortfolioCard= ({webUrl, codeUrl, imgSrc, title, description} : Props) => 
               <p className="text-white text-sm text-center px-3">{description}</p>
             </div>
             <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
-              <a href={codeUrl} className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
+              <a href={codeUrl} className={`${btnBackground} text-center w-[77px] text-white px-4 py-1 m-2 z-10`} target="_blank" rel="noopener noreferrer">
                 Code
               </a>
-              <a href={webUrl} className={`${btnBackground} w-[77px] text-white px-4 py-1 m-2 z-10`}>
+              <a href={webUrl} className={`${btnBackground} text-center w-[77px] text-white px-4 py-1 m-2 z-10`} target="_blank" rel="noopener noreferrer">
                 Link
               </a>
             </div>
