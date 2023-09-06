@@ -116,21 +116,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               ))}
               </div>
               <ul className="flex flex-col items-center my-8 gap-4">
-                <li
-                  className="
-                                text-secondary-blue 
-                                hover:drop-shadow-md 
-                                cursor-pointer"
-                >
-                  <BsGithub size={25} />
+                <li className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
+                  <a href="https://github.com/maciekpastuszak" target="_blank" rel="noopener noreferrer"><BsGithub size={25} /></a>
                 </li>
-                <li
-                  className="
-                                text-secondary-blue 
-                                hover:drop-shadow-md 
-                                cursor-pointer"
-                >
-                  <BsLinkedin size={25} />
+                <li className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
+                  <a href="https://www.linkedin.com/in/mpastuszak/" target="_blank" rel="noopener noreferrer"><BsLinkedin size={25} /></a>
                 </li>
               </ul>
             </motion.div>
