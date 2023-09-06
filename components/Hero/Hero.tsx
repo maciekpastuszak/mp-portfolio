@@ -29,7 +29,7 @@ const Hero = ({ setSelectedPage }: Props) => {
     const timer = setTimeout(() => {
       setShowCursor1(true);
       setShowFirstLine(true);
-    }, 1000);
+    }, 1);
 
     return () => clearTimeout(timer);
   }, []);
@@ -75,7 +75,7 @@ const Hero = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="hero">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -85,7 +85,7 @@ const Hero = ({ setSelectedPage }: Props) => {
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
@@ -98,7 +98,6 @@ const Hero = ({ setSelectedPage }: Props) => {
                 cursorStyle='|'
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={1000}
               />
               )}
             </p>
