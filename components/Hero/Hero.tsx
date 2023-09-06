@@ -75,7 +75,7 @@ const Hero = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="hero">
-      {/* <div className="absolute inset-0">
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -85,7 +85,7 @@ const Hero = ({ setSelectedPage }: Props) => {
           <source src="backgroundVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div> */}
+      </div>
       <div className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
@@ -164,7 +164,9 @@ const Hero = ({ setSelectedPage }: Props) => {
         variants={fadeIn}
         initial="hidden"
         whileInView="show"
-        className="absolute md:left-24 left-12 ease-in">
+        className="absolute md:left-24 left-12 ease-in"
+        onClick={() => setSelectedPage(SelectedPage.About)}
+        >
           <a href="#about">
             <ScrollElement type={"chevron-bouncing"} text={"about"} colorIcon={"#FFDF38"} colorText={"#fff"} />
           </a>
