@@ -43,7 +43,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           <a href="/#hero">
             <BiHomeAlt2 size={27} />
           </a>
-          {selectedPage ? (
+          {selectedPage == "hero" ? (
             <div className="flex absolute top-8 left-0 w-full justify-start">
               <hr className="border-accent-yellow w-1/3" />
             </div>
