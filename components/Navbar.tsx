@@ -70,10 +70,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="flex items-center justify-between gap-8">
           <ul className="flex flex-row">
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <a href="https://github.com/maciekpastuszak"><BsGithub size={25} /></a>
+              <a href="https://github.com/maciekpastuszak" target="_blank" rel="noopener noreferrer"><BsGithub size={25} /></a>
             </li>
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <a href="https://www.linkedin.com/in/mpastuszak/"><BsLinkedin size={25} /></a>
+              <a href="https://www.linkedin.com/in/mpastuszak/" target="_blank" rel="noopener noreferrer"><BsLinkedin size={25} /></a>
             </li>
           </ul>
         </div>
