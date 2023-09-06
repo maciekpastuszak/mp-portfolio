@@ -39,10 +39,17 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
 
         {/* HOME */}
-        <div className="text-secondary-blue hover:drop-shadow-md cursor-pointer w-[82px]">
+        <div className="relative text-secondary-blue hover:drop-shadow-md cursor-pointer w-[82px]">
           <a href="/#hero">
             <BiHomeAlt2 size={27} />
           </a>
+          {selectedPage ? (
+            <div className="flex absolute top-8 left-0 w-full justify-start">
+              <hr className="border-accent-yellow w-1/3" />
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
 
         {/* NAV LINKS */}
@@ -63,10 +70,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="flex items-center justify-between gap-8">
           <ul className="flex flex-row">
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <BsGithub size={25} />
+              <a href="https://github.com/maciekpastuszak"><BsGithub size={25} /></a>
             </li>
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <BsLinkedin size={25} />
+              <a href="https://www.linkedin.com/in/mpastuszak/"><BsLinkedin size={25} /></a>
             </li>
           </ul>
         </div>
