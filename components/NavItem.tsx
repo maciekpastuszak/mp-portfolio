@@ -13,20 +13,24 @@ const NavItem: React.FC<NavItemProps> = ({ label, href, page, selectedPage, setS
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
   
   return (
-    <div className="flex flex-col text-center">
-      <div className="px-2 cursor-pointer">
-        <a href={href} 
-        className="text-secondary-blue hover:drop-shadow-md"
-        onClick={() => setSelectedPage(lowerCasePage)}
-        >{label}</a>
-       {selectedPage === lowerCasePage ? (
-         <div><hr className="border-accent-yellow mt-2" /></div>
-       ) : (
-        <div></div>
-       )
-       }
+<div className="flex flex-col text-center">
+  <div className="relative w-[81px] px-2 cursor-pointer">
+    <a
+      href={href}
+      className="text-secondary-blue hover:drop-shadow-md"
+      onClick={() => setSelectedPage(lowerCasePage)}
+    >
+      {label}
+    </a>
+    {selectedPage === lowerCasePage ? (
+      <div className="flex absolute top-8 left-0 w-full justify-center">
+        <hr className="border-accent-yellow w-2/3" />
       </div>
-    </div>
+    ) : (
+      <div></div>
+    )}
+  </div>
+</div>
   )
 }
 
