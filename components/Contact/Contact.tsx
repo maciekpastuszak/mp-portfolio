@@ -16,15 +16,37 @@ const Contact = ({ setSelectedPage }: Props) => {
           </div>
           <div className="w-full flex flex-col mb-4">
             <label htmlFor="name">name</label>
-            <input type="text" id="name" className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#B9B9B9] rounded-lg border border-[#F5F5F5]" autoComplete="off" minLength={5} maxLength={30} required />
+            <input 
+              type="text" 
+              id="name" 
+              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              autoComplete="off" 
+              minLength={5} 
+              maxLength={30} 
+              required />
           </div>
           <div className="w-full flex flex-col mb-4">
             <label htmlFor="email">e-mail</label>
-            <input type="email" id="email" className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#B9B9B9] rounded-lg border border-[#F5F5F5]" autoComplete="off" minLength={5} maxLength={30} required />
+            <input 
+              type="email" 
+              id="email" 
+              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              autoComplete="off" 
+              minLength={5} 
+              maxLength={30} 
+              required />
           </div>
           <div className="w-full flex flex-col mb-4">
             <label htmlFor="message">message</label>
-            <textarea name="message" id="message" className="bg-[#B9B9B9] rounded-lg border border-[#F5F5F5]" cols={30} rows={10} minLength={10} maxLength={500} required/>
+            <textarea 
+              name="message" 
+              id="message" 
+              className="bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              cols={30} 
+              rows={10} 
+              minLength={10} 
+              maxLength={500} 
+              required/>
           </div>
           <button type="submit" >send</button>
        </form>
