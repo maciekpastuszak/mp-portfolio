@@ -19,7 +19,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="text" 
               id="name" 
-              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -30,7 +30,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="email" 
               id="email" 
-              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -41,7 +41,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <textarea 
               name="message" 
               id="message" 
-              className="bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-inner2" 
+              className="bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
               cols={30} 
               rows={10} 
               minLength={10} 
