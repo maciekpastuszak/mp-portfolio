@@ -5,7 +5,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const inputStyle = "ps-3 text-primary-dark-800 text-bold text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
+const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
 const Contact = ({ setSelectedPage }: Props) => {
   return (
@@ -14,10 +14,10 @@ const Contact = ({ setSelectedPage }: Props) => {
        <form action="" className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
-            <p className="text-right text-secondary-blue text-4xl font-light">Let's get in touch</p>
+            <p className="text-right text-secondary-blue text-4xl font-light">Let's get in touch!</p>
           </div>
           <div className="w-full flex flex-col mb-4">
-            <label htmlFor="name">name</label>
+            <label htmlFor="name" className="font-thin">name</label>
             <input 
               type="text" 
               id="name" 
@@ -28,7 +28,7 @@ const Contact = ({ setSelectedPage }: Props) => {
               required />
           </div>
           <div className="w-full flex flex-col mb-4">
-            <label htmlFor="email">e-mail</label>
+            <label htmlFor="email" className="font-thin">e-mail</label>
             <input 
               type="email" 
               id="email" 
@@ -39,18 +39,18 @@ const Contact = ({ setSelectedPage }: Props) => {
               required />
           </div>
           <div className="w-full flex flex-col mb-4">
-            <label htmlFor="message">message</label>
+            <label htmlFor="message" className="font-thin">message</label>
             <textarea 
               name="message" 
               id="message" 
               className={`pt-2 ${inputStyle}`}
               cols={30} 
-              rows={10} 
+              rows={8} 
               minLength={10} 
               maxLength={500} 
               required/>
           </div>
-          <button type="submit" >send</button>
+          <button type="submit" className="w-[127px] h-[44px] shrink-0 rounded-xl border-2 border-accent-yellow-800 hover:bg-accent-yellow-800 hover:text-primary-dark-800">send</button>
        </form>
       </div>
   </section>
