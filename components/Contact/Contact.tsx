@@ -8,10 +8,20 @@ type Props = {
 const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
 const Contact = ({ setSelectedPage }: Props) => {
+
+  async function handleSubmit(e: any) {
+    e.preventDefault();
+
+    const data = {
+      name: String(e.target.name.value),
+      email: String(e.target.email.value),
+      message: String(e.target.message.value),
+    }
+  }
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
       <div className="w-5/6 py-24 text-white flex flex-col mx-auto justify-end items-end"> 
-       <form action="" className="w-5/6 sm:w-2/3 lg:w-2/5">
+       <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
             <p className="text-right text-secondary-blue text-4xl font-light">Let's get in touch!</p>
