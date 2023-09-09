@@ -8,20 +8,21 @@ type Props = {
 const Contact = ({ setSelectedPage }: Props) => {
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
-      <div className="w-5/6 bg-primary-dark py-24 text-white flex flex-col mx-auto justify-end items-end"> 
-        <div className="">
-          <p>Let's get in touch</p>
-        </div>
+      <div className="w-5/6 py-24 text-white flex flex-col mx-auto justify-end items-end"> 
        <form action="" className="w-5/6 sm:w-2/3 lg:w-2/5">
-          <div className="w-full flex flex-col">
+
+          <div className="my-5 flex">
+            <p className="text-right text-secondary-blue text-4xl font-light">Let's get in touch</p>
+          </div>
+          <div className="w-full flex flex-col mb-4">
             <label htmlFor="name">name</label>
             <input type="text" id="name" autoComplete="off" minLength={5} maxLength={30} required />
           </div>
-          <div className="w-full flex flex-col">
+          <div className="w-full flex flex-col mb-4">
             <label htmlFor="email">e-mail</label>
             <input type="email" id="email" autoComplete="off" minLength={5} maxLength={30} required />
           </div>
-          <div className="w-full flex flex-col">
+          <div className="w-full flex flex-col mb-4">
             <label htmlFor="message">message</label>
             <textarea name="message" id="message" cols={30} rows={10} minLength={10} maxLength={500} required/>
           </div>
