@@ -12,17 +12,18 @@ const Contact = ({ setSelectedPage }: Props) => {
        <form action="">
 
           <div className="w-full flex flex-col">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" autoComplete="off" />
+            <label htmlFor="name">name</label>
+            <input type="text" id="name" autoComplete="off" required />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="email">E-mail</label>
-            <input type="email" id="email" autoComplete="off" />
+            <label htmlFor="email">e-mail</label>
+            <input type="email" id="email" autoComplete="off" required />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">message</label>
             <textarea name="message" id="message" cols={30} rows={10} />
           </div>
+          <button type="submit" >send</button>
 
        </form>
       </div>
