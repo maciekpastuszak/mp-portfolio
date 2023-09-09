@@ -5,6 +5,8 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+const inputStyle = "ps-3 text-primary-dark-800 text-bold text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
+
 const Contact = ({ setSelectedPage }: Props) => {
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
@@ -19,7 +21,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="text" 
               id="name" 
-              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
+              className={`h-[50px] ${inputStyle}`}
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -30,7 +32,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="email" 
               id="email" 
-              className="h-[50px] text-primary-dark-800 text-bold ps-3 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
+              className={`h-[50px] ${inputStyle}`}
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -41,7 +43,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <textarea 
               name="message" 
               id="message" 
-              className="bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2" 
+              className={`pt-2 ${inputStyle}`}
               cols={30} 
               rows={10} 
               minLength={10} 
