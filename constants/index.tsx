@@ -131,7 +131,7 @@ export const portfolioItems = [
     description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS"
   },
   {
-    webUrl: 'https://twitter.maciejpastuszak.pl/',
+    webUrl: 'https://twitter-clone-5gxphh679-maciekpastuszak.vercel.app/',
     codeUrl: 'https://github.com/maciekpastuszak/twitter-clone',
     imgSrc: '/screen_twitter.jpg',
     title: 'Twitter Clone',
@@ -145,7 +145,7 @@ export const portfolioItems = [
     description: "A social media platform to create and share DALL-E generated images"
   },
   {
-    webUrl: 'http://jobs.maciejpastuszak.pl/',
+    webUrl: 'https://expo.dev/@paciekfly/react_native_jobs?serviceType=classic&distribution=expo-go',
     codeUrl: 'https://github.com/maciekpastuszak/react_native_jobs',
     imgSrc: '/screen_jobs.jpg',
     title: 'Jobs',
