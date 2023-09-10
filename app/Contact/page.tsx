@@ -33,6 +33,10 @@ const Contact = ({ setSelectedPage }: Props) => {
     if (response.ok) {
       console.log("Message sent successfully");
       setLoading(false);
+      //reset the form
+      e.target.name.value = "";
+      e.target.mail.value = "";
+      e.target.message.value = "";
     }
 
     if (!response.ok) {
