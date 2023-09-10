@@ -1,10 +1,10 @@
 import React from 'react';
-import Strength from '../Strength';
+import Strength from '../../components/Strength';
 import { strengthCard, techIcons } from '@/constants';
-import TechIcon from '../TechIcon';
+import TechIcon from '../../components/TechIcon';
 import Image from 'next/image';
 import { SelectedPage } from '@/shared/types';
-import Header from '../Header';
+import Header from '../../components/Header';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

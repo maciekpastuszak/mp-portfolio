@@ -1,6 +1,6 @@
 import { SelectedPage } from '@/shared/types';
 import React from 'react'
-import PortfolioCard from '../PortfolioCard';
+import PortfolioCard from '../../components/PortfolioCard';
 import { portfolioItems } from '@/constants';
 
 type Props = {

@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 
-import Hero from '@/components/Hero/Hero';
-import About from '@/components/About/About';
-import Portfolio from '@/components/Portfolio/Portfolio';
-import Contact from '@/components/Contact/Contact';
+import Hero from '@/app/Hero/page';
+import About from '@/app/About/page';
+import Portfolio from '@/app/Portfolio/page';
+import Contact from '@/app/Contact/page';
 import Navbar from '@/components/Navbar';
 import { SelectedPage } from '@/shared/types';
 
