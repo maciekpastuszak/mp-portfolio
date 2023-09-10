@@ -16,7 +16,15 @@ const Contact = ({ setSelectedPage }: Props) => {
       name: String(e.target.name.value),
       email: String(e.target.email.value),
       message: String(e.target.message.value),
-    }
+    };
+
+    const response = await fetch ("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
   }
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
