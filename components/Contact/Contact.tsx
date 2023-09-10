@@ -25,6 +25,14 @@ const Contact = ({ setSelectedPage }: Props) => {
       },
       body: JSON.stringify(data),
     })
+
+    if (response.ok) {
+      console.log("Message sent successfully")
+    }
+
+    if (!response.ok) {
+      console.log("Error sending message")
+    }
   }
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
