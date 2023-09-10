@@ -4,6 +4,8 @@ export default async function (req: Request,res: Response) {
 
     const { name, email, message } = req.body;
 
+    const user = process.env.user;
+
     const data = {
         name, email, message
     }
@@ -19,6 +21,21 @@ export default async function (req: Request,res: Response) {
     });
 
     try {
+
+        const mail = await transporter.sendMail({
+            from: user,
+            to: process.env.mymail,
+            replyTo: email,
+            subject: `Contact form from ${name}`,
+            html: `
+            <p>Name: ${name}</p>
+            <p>E-mail: ${email}</p>
+            <p>Message: ${message}</p>
+            `,
+        })
+
+        console.log("Message sent:", mail.messageId)
+
         return req.status(200).json({message: "success"})
     } catch (error) {
         console.log(error);
