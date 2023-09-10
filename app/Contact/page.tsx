@@ -1,5 +1,7 @@
+"use client"
+
 import { SelectedPage } from '@/shared/types';
-import React from 'react'
+import React, { useState } from 'react'
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -9,8 +11,10 @@ const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded
 
 const Contact = ({ setSelectedPage }: Props) => {
 
+  const [loading, setLoading] = useState(false)
   async function handleSubmit(e: any) {
     e.preventDefault();
+    setLoading(true);
 
     const data = {
       name: String(e.target.name.value),
@@ -27,11 +31,13 @@ const Contact = ({ setSelectedPage }: Props) => {
     })
 
     if (response.ok) {
-      console.log("Message sent successfully")
+      console.log("Message sent successfully");
+      setLoading(false);
     }
 
     if (!response.ok) {
-      console.log("Error sending message")
+      console.log("Error sending message");
+      setLoading(false);
     }
   }
   return (
