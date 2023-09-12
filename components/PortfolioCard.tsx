@@ -45,9 +45,9 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
           </div>
           <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
             <motion.div
-              variants={slideIn('left', 'tween', 0.2, 1)} // Slide in animation for "Code"
-              initial="hidden"
-              animate="show"
+            initial={{ x: '-50%' }} // Adjust the initial value as desired (e.g., '20%' for a shorter distance)
+            animate={{ x: 0 }} 
+            transition={{ type: 'tween', delay: 0, duration: 0.5, ease: 'easeOut' }}
             >
               <a
                 href={codeUrl}
@@ -59,9 +59,9 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
               </a>
             </motion.div>
             <motion.div
-              initial={{ x: '100%' }} // Initial position for "Link" (off-screen right)
-              animate={{ x: 0 }} // Slide in animation for "Link"
-              transition={{ type: 'tween', delay: 0.2, duration: 1, ease: 'easeOut' }}
+              initial={{ x: '50%' }}
+              animate={{ x: 0 }} 
+              transition={{ type: 'tween', delay: 0, duration: 0.5, ease: 'easeOut' }}
             >
               <a
                 href={webUrl}
