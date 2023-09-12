@@ -35,7 +35,7 @@ const Contact = ({ setSelectedPage }: Props) => {
       setLoading(false);
       //reset the form
       e.target.name.value = "";
-      e.target.mail.value = "";
+      e.target.email.value = "";
       e.target.message.value = "";
     }
 

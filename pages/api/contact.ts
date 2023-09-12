@@ -26,9 +26,9 @@ export default async function handler(
   };
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.poczta.onet.pl',
-    port: 465,
-    secure: true,
+    host: 'smtp-mail.outlook.com',
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.user,
       pass: process.env.pass,
@@ -37,7 +37,7 @@ export default async function handler(
 
   try {
     const mail = await transporter.sendMail({
-      from: user,
+      from: process.env.user,
       to: process.env.mailTo,
       replyTo: email,
       subject: `Contact form from ${name}`,
