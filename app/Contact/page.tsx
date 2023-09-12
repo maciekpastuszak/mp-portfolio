@@ -57,7 +57,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="text" 
               id="name" 
-              className={`h-[50px] ${inputStyle}`}
+              className={`h-[40px] ${inputStyle}`}
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -68,7 +68,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <input 
               type="email" 
               id="email" 
-              className={`h-[50px] ${inputStyle}`}
+              className={`h-[40px] ${inputStyle}`}
               autoComplete="off" 
               minLength={5} 
               maxLength={30} 
@@ -81,7 +81,7 @@ const Contact = ({ setSelectedPage }: Props) => {
               id="message" 
               className={`pt-2 ${inputStyle}`}
               cols={30} 
-              rows={8} 
+              rows={6} 
               minLength={10} 
               maxLength={500} 
               required/>
