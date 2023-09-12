@@ -1,44 +1,63 @@
-import nodemailer from "nodemailer";
+import { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer';
 
-export default async function (req: Request,res: Response) {
+interface RequestBody {
+  name: string;
+  email: string;
+  message: string;
+}
 
-    const { name, email, message } = req.body;
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  if (req.method !== 'POST') {
+    return res.status(405).end();
+  }
 
-    const user = process.env.user;
+  const { name, email, message } = req.body;
 
-    const data = {
-        name, email, message
-    }
+  const user = process.env.user;
 
-    const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 456,
-        secure: true,
-        auth: {
-            user: process.env.user,
-            pass: process.env.pass,
-        },
+  const data: RequestBody = {
+    name,
+    email,
+    message,
+  };
+
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.poczta.onet.pl',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.user,
+      pass: process.env.pass,
+    },
+  });
+
+  try {
+    const mail = await transporter.sendMail({
+      from: user,
+      to: process.env.mailTo,
+      replyTo: email,
+      subject: `Contact form from ${name}`,
+      html: `
+        <p>Name: ${name}</p>
+        <p>E-mail: ${email}</p>
+        <p>Message: ${message}</p>
+      `,
     });
 
-    try {
+    console.log('Message sent:', mail.messageId);
 
-        const mail = await transporter.sendMail({
-            from: user,
-            to: process.env.mymail,
-            replyTo: email,
-            subject: `Contact form from ${name}`,
-            html: `
-            <p>Name: ${name}</p>
-            <p>E-mail: ${email}</p>
-            <p>Message: ${message}</p>
-            `,
-        })
+    return res.status(200).json({ message: 'success' });
 
-        console.log("Message sent:", mail.messageId)
+  } catch (error) {
 
-        return req.status(200).json({message: "success"})
-    } catch (error) {
-        console.log(error);
-        res.status(500).json({message: "Could not send the email. Your message was not sent"})
-    }
+    console.error(error);
+
+    return res.status(500).json({
+      message: 'Could not send the email. Your message was not sent',
+    });
+  }
 }
