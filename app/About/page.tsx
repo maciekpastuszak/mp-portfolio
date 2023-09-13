@@ -18,7 +18,7 @@ const About = ({ setSelectedPage }: Props) => {
           <div className="flex flex-col w-full justify-center items-center">
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
               <div className='flex flex-col lg:flex-row sm:w-1/2 w-full h-auto'>
-                <p className="text-secondary-blue text-sm lg:text-base text-center sm:text-end md:pe-4 mt-5 mb-5">Highly accomplished manager and web developer with over 15 years 
+                <p className="leading-relaxed text-secondary-blue text-sm lg:text-base text-center sm:text-end md:pe-4 mt-5 mb-5">Highly accomplished manager and web developer with over 15 years 
                   of experience leading teams and delivering successful 
                   projects. Skilled in strategic planning, team building, and project management, 
                   as well as in modern web development technologies.</p>
@@ -27,7 +27,7 @@ const About = ({ setSelectedPage }: Props) => {
                 <img src="/MyImage.png" alt="PortfolioImage" className="w-[250px] h-[250px] max-w-fit" />
               </div>
               <div className='flex flex-col lg:flex-row sm:w-1/2 w-full h-auto'>
-                <p className="text-secondary-blue text-sm lg:text-base text-center sm:text-start md:ps-4 mt-5 mb-5"> A creative problem-solver 
+                <p className="leading-relaxed text-secondary-blue text-sm lg:text-base text-center sm:text-start md:ps-4 mt-5 mb-5"> A creative problem-solver 
                   with a strong work ethic and a passion for technology. My commitment to continuous learning and innovation ensures that I consistently deliver cutting-edge solutions to clients and exceed their expectations.</p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const About = ({ setSelectedPage }: Props) => {
             </div>
 
 
-            <div className="flex text-center mt-8 mb-4">
+            <div className="flex text-center mt-4 mb-4">
               <Header title="technologies" />
             </div>
 
