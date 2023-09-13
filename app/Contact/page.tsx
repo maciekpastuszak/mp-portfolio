@@ -47,10 +47,10 @@ const Contact = ({ setSelectedPage }: Props) => {
   }
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark">
-      <div className="w-5/6 py-24 text-white flex flex-col mx-auto justify-end items-end"> 
-        <div className="flex text-center mt-8 mb-4">
-            <Header title="Porfolio" />
+        <div className="flex justify-center mt-8 mb-4 pt-20">
+            <Header title="Contact Me" />
         </div>
+      <div className="w-5/6 text-white flex flex-col mx-auto justify-end items-end"> 
        <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
