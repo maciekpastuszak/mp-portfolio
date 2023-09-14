@@ -56,17 +56,24 @@
 }
 
 .grad-aboutSection-rc {
-  background: rgb(29,105,120);
-  background: radial-gradient(circle, rgba(29,105,120,1) 17%, rgba(14,18,52,1) 45%);
-}
-
-.gradient-02 {
   position: absolute;
   width: 200px;
   height: 338px;
   top: 50px;
   right: 0px;
   margin-right: -200px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.grad-aboutSection-le {
+  position: absolute;
+  width: 200px;
+  height: 338px;
+  top: 250x;
+  left: 0px;
+  margin-left: -400px;
 
   background: #7aebfb;
   filter: blur(190px);

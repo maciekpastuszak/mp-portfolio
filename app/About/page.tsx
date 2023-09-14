@@ -31,7 +31,7 @@ const About = ({ setSelectedPage }: Props) => {
                   with a strong work ethic and a passion for technology. My commitment to continuous learning and innovation ensures that I consistently deliver cutting-edge solutions to clients and exceed their expectations.</p>
               </div>
             </div>
-            <div className="gradient-02 z-0" />
+            <div className="grad-aboutSection-rc z-0" />
 
             <div className="flex text-center mt-8 mb-3">
               <Header title="Strengths" />
@@ -64,6 +64,7 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
+            <div className="grad-aboutSection-le z-0" />
 
             <div className="flex text-center mt-4 mb-4">
               <Header title="technologies" />
