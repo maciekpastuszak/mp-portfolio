@@ -33,7 +33,7 @@ const About = ({ setSelectedPage }: Props) => {
             </div>
             <div className="grad-aboutSection-rc z-0" />
 
-            <div className="flex text-center mt-8 mb-3">
+            <div className="flex text-center mt-8 mb-1">
               <Header title="Strengths" />
             </div>
 

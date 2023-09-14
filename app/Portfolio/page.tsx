@@ -11,11 +11,12 @@ type Props = {
 const Portfolio = ({ setSelectedPage }: Props) => {
   return (
     <section id="portfolio" className="min-h-screen w-100 py-2 bg-primary-dark">
-      <div className="mx-auto py-12 flex flex-col justify-center items-center">
+      <div className="relative mx-auto py-12 flex flex-col justify-center items-center">
 
         <div className="flex text-center mt-8 mb-4">
             <Header title="Porfolio" />
         </div>
+        <div className="grad-portfolioSection-rc z-0" />
 
         <div className="
           grid
@@ -36,6 +37,7 @@ const Portfolio = ({ setSelectedPage }: Props) => {
               />
           ))}
         </div>
+        <div className="grad-portfolioSection-le z-0" />
       </div>
     </section>
   )
