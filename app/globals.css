@@ -48,3 +48,9 @@
   transform: translateX(200px);
 }
 
+/* gradient */
+
+.gradient-background {
+  background: rgb(12, 14, 42);
+  background: linear-gradient(180deg, rgba(12, 14, 42, 1) 0%, rgba(14, 18, 52, 1) 100%);
+}
