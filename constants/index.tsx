@@ -4,23 +4,27 @@ export const navLinks = [
     { href: '/#contact', key: 'contact', text: 'Contact' },
   ];
 
-export const strengthCard = [
+export const strengthCards = [
   {
+    index: 1,
     src: '/polygon1.svg',
     title: 'Problem solver',
     description: 'Thrive on finding creative solutions to complex challenges in order to achieve optimal results'
   },
   {
+    index: 2,
     src: '/polygon2.svg',
     title: 'Innovative',
     description: 'Constantly exploring new technologies and pushing the boundaries of modern web development'
   },
   {
+    index: 3,
     src: '/polygon3.svg',
     title: 'Continuous learning',
     description: 'Committed to staying updated with the latest trends and best practices in front-end development.'
   },
   {
+    index: 4,
     src: '/polygon4.svg',
     title: 'User-focused',
     description: 'Passionate about creating web experiences that prioritize user needs and preferences.'

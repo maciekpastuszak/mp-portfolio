@@ -1,10 +1,11 @@
 import React from 'react';
 import Strength from '../../components/Strength';
-import { strengthCard, techIcons } from '@/constants';
+import { strengthCards, techIcons } from '@/constants';
 import TechIcon from '../../components/TechIcon';
 import Image from 'next/image';
 import { SelectedPage } from '@/shared/types';
 import Header from '../../components/Header';
+
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -38,30 +39,15 @@ const About = ({ setSelectedPage }: Props) => {
             </div>
 
             <div className="top-10 flex flex-col sm:flex-row my-5">
-              <div className='flex flex-col lg:flex-row'>
-                <Strength
-                  icon={strengthCard[0].src} 
-                  title={strengthCard[0].title}
-                  content={strengthCard[0].description}
-                  />
-                <Strength
-                  icon={strengthCard[1].src} 
-                  title={strengthCard[1].title}
-                  content={strengthCard[1].description}
-                  />
-              </div>
-              <div className='flex flex-col lg:flex-row'>
-                <Strength
-                  icon={strengthCard[2].src} 
-                  title={strengthCard[2].title}
-                  content={strengthCard[2].description}
-                  />  
-                <Strength
-                  icon={strengthCard[3].src} 
-                  title={strengthCard[3].title}
-                  content={strengthCard[3].description}
-                  />
-              </div>
+              {strengthCards.map((card, index) => (
+                 <Strength
+                 key={index}
+                 index={card.index}
+                 icon={card.src} 
+                 title={card.title}
+                 content={card.description}
+                 />
+              ))}
             </div>
 
             <div className="grad-aboutSection-le z-0" />
