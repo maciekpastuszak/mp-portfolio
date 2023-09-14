@@ -38,14 +38,14 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
         <>
           <div className="absolute bottom-32 text-white inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
             <p>{title}</p>
-            <div className="absolute w-[40px] h-1 bg-white top-14"></div>
+            <div className="absolute w-[40px] h-1 bg-white mt-1 top-14"></div>
           </div>
           <div className="absolute top-20 flex flex-col w-full">
             <p className="text-white text-sm text-center px-3">{description}</p>
           </div>
           <div className="absolute top-32 inset-0 flex flex-row justify-center items-center transition-opacity duration-300 ease-in">
             <motion.div
-            initial={{ x: '-50%' }} // Adjust the initial value as desired (e.g., '20%' for a shorter distance)
+            initial={{ x: '-50%' }}
             animate={{ x: 0 }} 
             transition={{ type: 'tween', delay: 0, duration: 0.5, ease: 'easeOut' }}
             >

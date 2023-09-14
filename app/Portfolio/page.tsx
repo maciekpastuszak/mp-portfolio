@@ -13,7 +13,7 @@ const Portfolio = ({ setSelectedPage }: Props) => {
     <section id="portfolio" className="min-h-screen w-100 py-2 bg-primary-dark">
       <div className="relative mx-auto py-12 flex flex-col justify-center items-center">
 
-        <div className="flex text-center mt-8 mb-4">
+        <div className="flex text-center mt-4 mb-4">
             <Header title="Porfolio" />
         </div>
         <div className="grad-portfolioSection-rc z-0" />
