@@ -50,7 +50,24 @@
 
 /* gradient */
 
-.gradient-background {
+.gradient-aboutSection-top {
   background: rgb(12, 14, 42);
   background: linear-gradient(180deg, rgba(12, 14, 42, 1) 0%, rgba(14, 18, 52, 1) 100%);
+}
+
+.grad-aboutSection-rc {
+  background: rgb(29,105,120);
+  background: radial-gradient(circle, rgba(29,105,120,1) 17%, rgba(14,18,52,1) 45%);
+}
+
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 338px;
+  top: 50px;
+  right: 0px;
+  margin-right: -200px;
+
+  background: #7aebfb;
+  filter: blur(190px);
 }
