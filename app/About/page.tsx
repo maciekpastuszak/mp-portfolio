@@ -5,6 +5,7 @@ import TechIcon from '../../components/TechIcon';
 import Image from 'next/image';
 import { SelectedPage } from '@/shared/types';
 import Header from '../../components/Header';
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 type Props = {
@@ -37,18 +38,19 @@ const About = ({ setSelectedPage }: Props) => {
             <div className="flex text-center mt-8 mb-1">
               <Header title="Strengths" />
             </div>
-
-            <div className="top-10 flex flex-col sm:flex-row my-5">
-              {strengthCards.map((card, index) => (
-                 <Strength
-                 key={index}
-                 index={card.index}
-                 icon={card.src} 
-                 title={card.title}
-                 content={card.description}
-                 />
-              ))}
-            </div>
+            <AnimatePresence>
+              <div className="top-10 flex lg:flex-row flex-col my-5">
+                {strengthCards.map((card, index) => (
+                  <Strength
+                  key={index}
+                  index={index}
+                  icon={card.src} 
+                  title={card.title}
+                  content={card.description}
+                  />
+                ))}
+              </div>
+            </AnimatePresence>
 
             <div className="grad-aboutSection-le z-0" />
 

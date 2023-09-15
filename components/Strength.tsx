@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { motion } from 'framer-motion';
-import { rollIn } from '@/utils/motion';
+import { fadeIn } from '@/utils/motion';
 
 interface StrengthProps {
   index: number,
@@ -15,21 +15,25 @@ const Strength: React.FC<StrengthProps> = ({index, icon, title, content}) => {
   return (
     <>
         <motion.div 
-         variants={rollIn('right', 'spring', index * 0.5, 0.75)}
+         variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+         initial="hidden"
+         whileInView="show"
          className={`
+         relative
          flex
-         flex-col 
+         lg:flex-[0.5]
+         flex-[2]
+         flex-col
          items-center 
          justify-center 
          text-center 
          m-3 
          p-3 
-         w-[200px] 
+         min-w-[200px] 
          h-[250px] 
          transition-[flex] 
          duration-[0.7s] 
          ease-out-flex 
-         cursor-pointer
          border 
          border-transparent`}
         >
