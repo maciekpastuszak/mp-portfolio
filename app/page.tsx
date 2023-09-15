@@ -7,6 +7,7 @@ import About from '@/app/About/page';
 import Portfolio from '@/app/Portfolio/page';
 import Contact from '@/app/Contact/page';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { SelectedPage } from '@/shared/types';
 
 const HomePage = () => {
@@ -40,6 +41,7 @@ const HomePage = () => {
       <About setSelectedPage={setSelectedPage}/>
       <Portfolio setSelectedPage={setSelectedPage}/>
       <Contact setSelectedPage={setSelectedPage}/>
+      <Footer setSelectedPage={setSelectedPage} />
     </div>
   );
 };
