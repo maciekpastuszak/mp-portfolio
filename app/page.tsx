@@ -41,7 +41,7 @@ const HomePage = () => {
       <About setSelectedPage={setSelectedPage}/>
       <Portfolio setSelectedPage={setSelectedPage}/>
       <Contact setSelectedPage={setSelectedPage}/>
-      <Footer setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 };
