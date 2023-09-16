@@ -39,7 +39,7 @@ const About = ({ setSelectedPage }: Props) => {
               <Header title="Strengths" />
             </div>
             <AnimatePresence>
-              <div className="top-10 flex lg:flex-row flex-col my-5">
+              <div className="top-10 flex lg:flex-row flex-col my-3">
                 {strengthCards.map((card, index) => (
                   <Strength
                   key={index}
@@ -58,9 +58,9 @@ const About = ({ setSelectedPage }: Props) => {
               <Header title="technologies" />
             </div>
 
-            <div className="relative border border-accent-yellow rounded-lg flex flex-wrap mt-6 mb-16 z-20">
+            <div className="relative border border-accent-yellow rounded-lg flex flex-wrap mt-6 mb-2 z-20">
               <p className="absolute left-6 -top-3 z-30 bg-primary-dark px-3 font-normal">Tech stack</p>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap justify-center">
                 {techIcons.map((item, index) => (
                   <div className="p-5" key={index}>
                     <TechIcon src={item.src} title={item.title} />
