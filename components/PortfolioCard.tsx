@@ -25,7 +25,7 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
 
   return (
     <div
-      className="relative w-[400px] h-[200px]"
+      className="relative md:w-[400px] w-[360px] md:h-[200px] h-[160px]"
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >

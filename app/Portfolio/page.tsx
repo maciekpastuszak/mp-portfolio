@@ -25,7 +25,7 @@ const Portfolio = ({ setSelectedPage }: Props) => {
           xl:grid-cols-3
           md:w-[800px]
           xl:w-[1200px]
-          place-content-center border border-red-400">
+          place-content-center">
           {portfolioItems.map((item, index) => (
             <PortfolioCard 
               key={index} 
