@@ -21,7 +21,7 @@ module.exports = {
         "secondary-blue": {
           DEFAULT: "#81E6D9",
           300: "#A3FBEF",
-          800: "#72B9B0",
+          800: "#4a8c83",
         },
         "accent-yellow": {
           DEFAULT: "#FFDF38",
