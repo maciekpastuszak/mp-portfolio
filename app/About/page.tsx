@@ -18,6 +18,11 @@ const About = ({ setSelectedPage }: Props) => {
     <section id="about" className="min-h-screen w-full py-8 bg-primary-dark gradient-aboutSection-top">
         <div className="relative inset-x-0 top-16 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <div className="flex flex-col w-full justify-center items-center">
+
+          <div className="flex text-center mb-4">
+              <Header title="About me" />
+            </div>
+
             <div className="relative flex flex-col sm:flex-row justify-center items-center">
               <div className='flex flex-col lg:flex-row sm:w-1/2 w-full h-auto'>
                 <p className="leading-relaxed text-secondary-blue text-sm lg:text-base text-center sm:text-end md:pe-4 mt-5 mb-5">Highly accomplished manager and web developer with over 15 years 
