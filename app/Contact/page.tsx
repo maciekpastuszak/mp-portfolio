@@ -1,16 +1,11 @@
 "use client"
 
 import Header from '@/components/Header';
-import { SelectedPage } from '@/shared/types';
 import React, { useState } from 'react'
-
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-};
 
 const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
-const Contact = ({ setSelectedPage }: Props) => {
+const Contact = () => {
 
   const [loading, setLoading] = useState(false)
   async function handleSubmit(e: any) {

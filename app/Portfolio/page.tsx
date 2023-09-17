@@ -1,14 +1,10 @@
-import { SelectedPage } from '@/shared/types';
+
 import React from 'react'
-import PortfolioCard from '../../components/PortfolioCard';
 import { portfolioItems } from '@/constants';
 import Header from '@/components/Header';
+import PortfolioCard from '@/components/PortfolioCard';
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-};
-
-const Portfolio = ({ setSelectedPage }: Props) => {
+const Portfolio = () => {
   return (
     <section id="portfolio" className="min-h-screen w-100 py-2 bg-primary-dark">
       <div className="relative mx-auto py-12 flex flex-col justify-center items-center">
@@ -16,6 +12,7 @@ const Portfolio = ({ setSelectedPage }: Props) => {
         <div className="flex text-center mt-2 mb-4">
             <Header title="Porfolio" />
         </div>
+        
         <div className="grad-portfolioSection-rc z-0" />
 
         <div className="

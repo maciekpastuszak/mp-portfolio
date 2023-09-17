@@ -7,11 +7,7 @@ import ScrollElement from 'react-scroll-element';
 import { SelectedPage } from '@/shared/types';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-};
-
-const Hero = ({ setSelectedPage }: Props) => {
+const Hero = () => {
 
   const [showCursor1, setShowCursor1] = useState(false);
   const [showCursor2, setShowCursor2] = useState(false);
@@ -167,7 +163,12 @@ const Hero = ({ setSelectedPage }: Props) => {
         <motion.div 
         variants={fadeIn('up', 'tween', 5, 2)}
         className="absolute md:left-24 left-12"
-        onClick={() => setSelectedPage(SelectedPage.About)}
+        onClick={() => {
+          const aboutSection = document.getElementById("about");
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
         >
           <a href="#about">
             <ScrollElement type={"chevron-bouncing"} text={"see more"} colorIcon={"#FFDF38"} colorText={"#fff"} />

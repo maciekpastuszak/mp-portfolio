@@ -10,6 +10,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SelectedPage } from '@/shared/types';
 
+
+
 const HomePage = () => {
 
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -33,14 +35,14 @@ const HomePage = () => {
   return (
     <div className="bg-primary-dark overflow-hidden">
       <Navbar 
-        setSelectedPage={setSelectedPage}
+       setSelectedPage={setSelectedPage}
         selectedPage={selectedPage}
         isTopOfPage={isTopOfPage}
         />
-      <Hero setSelectedPage={setSelectedPage}/>
-      <About setSelectedPage={setSelectedPage}/>
-      <Portfolio setSelectedPage={setSelectedPage}/>
-      <Contact setSelectedPage={setSelectedPage}/>
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
       <Footer />
     </div>
   );

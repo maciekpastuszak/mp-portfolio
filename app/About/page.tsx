@@ -5,17 +5,13 @@ import Strength from '../../components/Strength';
 import { strengthCards, techIcons } from '@/constants';
 import TechIcon from '../../components/TechIcon';
 import Image from 'next/image';
-import { SelectedPage } from '@/shared/types';
 import Header from '../../components/Header';
 import { AnimatePresence, motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '@/utils/motion';
 
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-};
 
-const About = ({ setSelectedPage }: Props) => {
+const About = () => {
 
   return (
     <section id="about" className="min-h-screen w-full py-8 bg-primary-dark gradient-aboutSection-top">

@@ -1,6 +1,8 @@
+"use client"
+
 import React from 'react'
-import { IconContext } from "react-icons";
 import {FaChevronDown, FaChevronUp} from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 type HeaderProps = {
     title: string;
