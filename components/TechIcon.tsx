@@ -23,7 +23,7 @@ const TechIcon: React.FC<TechIconProps> = ({src, title}) => {
             title={title}
             width={80}
             height={80}
-            className="hover:drop-shadow-md"
+            className="hover:drop-shadow-md text-xs pb-2"
         />
         </Tooltip>
       {/* </div> */}

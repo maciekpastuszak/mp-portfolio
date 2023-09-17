@@ -109,7 +109,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                         shadow-md shadow-black
                       `}
             >
-              <div className="flex flex-col items-center gap-6 mt-6">
+              <div className="flex flex-col items-center gap-6 mt-8">
+              <a href="/#hero">
+                <BiHomeAlt2 size={27} />
+              </a>
               {navLinks.map((link, index) => (
                 <NavItem key={index} href={link.href} label={link.text} page={link.text} selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}/>
