@@ -8,7 +8,7 @@ const Footer = () => {
   return (
 <footer className="bg-primary-dark-800 py-8">
     <div className="mx-auto w-5/6 gap-16 md:flex">
-        <div className="mt-1 basis-1/2 md:mt-0 flex flex-col md:justify-start justify-center items-center">
+        <div className="mt-1 basis-1/2 md:mt-0 flex flex-col md:flex-row md:justify-start justify-center items-center">
             <p className={`${footerLinkStyle}`}><a href="#">Home</a></p>
             <p className={`${footerLinkStyle}`}><a href="#about">About</a></p>
             <p className={`${footerLinkStyle}`}><a href="#portfolio">Portfolio</a></p>
