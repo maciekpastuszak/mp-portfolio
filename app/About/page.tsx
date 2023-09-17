@@ -25,7 +25,7 @@ const About = ({ setSelectedPage }: Props) => {
             viewport={{ once: false, amount: 0.25 }}
             className="flex flex-col w-full justify-center items-center">
 
-          <div className="flex text-center mb-4">
+          <div className="flex text-center mb-5">
               <Header title="About me" />
             </div>
 
@@ -50,9 +50,10 @@ const About = ({ setSelectedPage }: Props) => {
             </div>
             <div className="grad-aboutSection-rc z-0" />
 
-            <div className="flex text-center mt-8 mb-1">
+            <div className="flex text-center mt-4 mb-1">
               <Header title="Strengths" />
             </div>
+
             <AnimatePresence>
               <div className="top-10 flex lg:flex-row flex-col my-3">
                 {strengthCards.map((card, index) => (
@@ -69,7 +70,7 @@ const About = ({ setSelectedPage }: Props) => {
 
             <div className="grad-aboutSection-le z-0" />
 
-            <div className="flex text-center mt-4 mb-2">
+            <div className="flex text-center mt-1 mb-2">
               <Header title="technologies" />
             </div>
 
