@@ -1,11 +1,11 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 import ScrollElement from 'react-scroll-element';
 import { SelectedPage } from '@/shared/types';
-import { fadeIn, slideIn } from '@/utils/motion';
+import { fadeIn, staggerContainer } from '@/utils/motion';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -86,7 +86,12 @@ const Hero = ({ setSelectedPage }: Props) => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="w-100 bg-primary-dark">
+      <motion.div 
+       variants={staggerContainer}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: false, amount: 0.25 }}
+      className="w-100 bg-primary-dark">
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
           <div className="grid gap-y-3">
@@ -156,13 +161,11 @@ const Hero = ({ setSelectedPage }: Props) => {
             )}
           </div>
         </div>
-      </div>
 
-      {/* Link to ABOUT */}
-      <AnimatePresence>
+         {/* Link to ABOUT */}
+
         <motion.div 
-        variants={slideIn('up', 'tween', 0.3, 1)}
-        initial="show"
+        variants={fadeIn('up', 'tween', 5, 2)}
         className="absolute md:left-24 left-12"
         onClick={() => setSelectedPage(SelectedPage.About)}
         >
@@ -170,7 +173,8 @@ const Hero = ({ setSelectedPage }: Props) => {
             <ScrollElement type={"chevron-bouncing"} text={"see more"} colorIcon={"#FFDF38"} colorText={"#fff"} />
           </a>
         </motion.div>
-        </AnimatePresence>
+
+      </motion.div>
     </section>
   );
 };

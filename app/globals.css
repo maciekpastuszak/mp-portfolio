@@ -38,6 +38,10 @@
 }
 /* END: General styles */
 
+.scroll-element {
+  width: 120px;
+  text-align: center;
+}
 .slideIn {
   transition: transform 0.5s ease-out;
   transform: translateX(-200px);
