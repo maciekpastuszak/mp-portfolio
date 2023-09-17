@@ -50,7 +50,11 @@ const Contact = ({ setSelectedPage }: Props) => {
         <div className="flex justify-center mt-2 mb-4 pt-5">
             <Header title="Contact Me" />
         </div>
-      <div className="w-5/6 text-white flex flex-col mx-auto justify-end items-end"> 
+
+      <div className="relative w-5/6 text-white flex flex-col mx-auto justify-end items-end"> 
+       
+        <div className="grad-contactSection-rt" />
+
        <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
@@ -92,6 +96,9 @@ const Contact = ({ setSelectedPage }: Props) => {
           </div>
           <button type="submit" disabled={loading} className="w-[127px] h-[44px] shrink-0 disabled:bg-gray-400 disabled:text-gray-100 rounded-xl border-2 border-accent-yellow-800 hover:bg-accent-yellow-800 hover:text-primary-dark-800">send</button>
        </form>
+
+       <div className="grad-contactSection-lb" />
+       
       </div>
   </section>
   )

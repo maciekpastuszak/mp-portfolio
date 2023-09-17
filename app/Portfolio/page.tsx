@@ -37,7 +37,6 @@ const Portfolio = ({ setSelectedPage }: Props) => {
               />
           ))}
         </div>
-        <div className="grad-portfolioSection-le z-0" />
       </div>
     </section>
   )

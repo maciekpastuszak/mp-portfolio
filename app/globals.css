@@ -61,7 +61,7 @@
 
 .grad-aboutSection-rc {
   position: absolute;
-  width: 200px;
+  width: 100px;
   height: 338px;
   top: 50px;
   right: 0px;
@@ -102,6 +102,30 @@
   top: 250x;
   left: 0px;
   margin-left: -200px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.grad-contactSection-lb {
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  top: 150px;
+  left: 0px;
+  margin-left: -200px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.grad-contactSection-rt {
+  position: absolute;
+  width: 200px;
+  height: 338px;
+  top: -250px;
+  right: 0px;
+  margin-right: -200px;
 
   background: #7aebfb;
   filter: blur(190px);

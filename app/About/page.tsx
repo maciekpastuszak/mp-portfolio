@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import Strength from '../../components/Strength';
 import { strengthCards, techIcons } from '@/constants';
@@ -19,7 +21,7 @@ const About = ({ setSelectedPage }: Props) => {
     <section id="about" className="min-h-screen w-full py-8 bg-primary-dark gradient-aboutSection-top">
         <div className="relative inset-x-0 top-16 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <motion.div
-            variants={staggerContainer}
+            variants={staggerContainer()}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
