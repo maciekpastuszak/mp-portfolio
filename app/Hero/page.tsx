@@ -1,11 +1,11 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useTypewriter, Typewriter, Cursor } from 'react-simple-typewriter';
 import ScrollElement from 'react-scroll-element';
 import { SelectedPage } from '@/shared/types';
-import { fadeIn } from '@/utils/motion';
+import { fadeIn, slideIn } from '@/utils/motion';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -159,19 +159,18 @@ const Hero = ({ setSelectedPage }: Props) => {
       </div>
 
       {/* Link to ABOUT */}
-      {showLink && (
+      <AnimatePresence>
         <motion.div 
-        variants={fadeIn}
-        initial="hidden"
-        whileInView="show"
-        className="absolute md:left-24 left-12 ease-in"
+        variants={slideIn('up', 'tween', 0.3, 1)}
+        initial="show"
+        className="absolute md:left-24 left-12"
         onClick={() => setSelectedPage(SelectedPage.About)}
         >
           <a href="#about">
-            <ScrollElement type={"chevron-bouncing"} text={"about"} colorIcon={"#FFDF38"} colorText={"#fff"} />
+            <ScrollElement type={"chevron-bouncing"} text={"see more"} colorIcon={"#FFDF38"} colorText={"#fff"} />
           </a>
         </motion.div>
-        )}
+        </AnimatePresence>
     </section>
   );
 };
