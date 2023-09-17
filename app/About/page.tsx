@@ -55,7 +55,7 @@ const About = ({ setSelectedPage }: Props) => {
             </div>
 
             <AnimatePresence>
-              <div className="top-10 flex lg:flex-row flex-col my-3">
+              <div className="top-10 flex lg:flex-row flex-col">
                 {strengthCards.map((card, index) => (
                   <Strength
                   key={index}

@@ -47,7 +47,7 @@ const Contact = ({ setSelectedPage }: Props) => {
   }
   return (
     <section id="contact" className="w-full min-h-screen bg-primary-dark mb-10">
-        <div className="flex justify-center mt-8 mb-4 pt-20">
+        <div className="flex justify-center mt-2 mb-4 pt-5">
             <Header title="Contact Me" />
         </div>
       <div className="w-5/6 text-white flex flex-col mx-auto justify-end items-end"> 
