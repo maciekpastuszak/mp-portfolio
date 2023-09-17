@@ -58,7 +58,7 @@ const Contact = ({ setSelectedPage }: Props) => {
        <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
-            <p className="text-right text-secondary-blue text-4xl font-light">Let's get in touch!</p>
+            <p className="text-right text-secondary-blue text-4xl font-light">Let&apos;s get in touch!</p>
           </div>
           <div className="w-full flex flex-col mb-4">
             <label htmlFor="name" className="font-thin">name</label>

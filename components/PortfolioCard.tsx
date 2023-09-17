@@ -4,6 +4,7 @@ import { portfolioItems } from '@/constants';
 import { motion } from 'framer-motion';
 import { slideIn } from '@/utils/motion';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 
 type Props = {
@@ -29,9 +30,11 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >
-      <img
+      <Image
         src={imgSrc}
         alt={title}
+        fill={true}
+        sizes="(max-width: 400px)"
         className={`transition-opacity duration-300 ease-in ${hovered ? 'opacity-25' : 'opacity-100'}`}
       />
       {hovered && (

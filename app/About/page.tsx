@@ -41,7 +41,7 @@ const About = ({ setSelectedPage }: Props) => {
                   as well as in modern web development technologies.</p>
               </motion.div>
               <div>
-                <img src="/MyImage.png" alt="PortfolioImage" className="w-[250px] h-[250px] max-w-fit" />
+                <Image src="/MyImage.png" alt="PortfolioImage" width={250} height={250} priority={false} className="w-[250px] h-[250px] max-w-fit" />
               </div>
               <motion.div 
                 variants={fadeIn('left', 'tween', 0.2, 1)}
