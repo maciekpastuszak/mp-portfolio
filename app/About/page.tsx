@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Header from '../../components/Header';
 import { AnimatePresence, motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '@/utils/motion';
+import { CldImage } from 'next-cloudinary';
 
 
 
@@ -37,7 +38,7 @@ const About = () => {
                   as well as in modern web development technologies.</p>
               </motion.div>
               <div>
-                <Image src="/MyImage.png" alt="PortfolioImage" width={250} height={250} priority={false} className="w-[250px] h-[250px] max-w-fit" />
+                <CldImage src="https://res.cloudinary.com/dqcadja0y/image/upload/v1695025730/maciejpastuszak/MyImage_aa1trw.png" alt="PortfolioImage" width={250} height={250} priority={false} className="w-[250px] h-[250px] max-w-fit" />
               </div>
               <motion.div 
                 variants={fadeIn('left', 'tween', 0.2, 1)}

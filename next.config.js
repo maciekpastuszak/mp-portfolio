@@ -3,7 +3,7 @@ const nextConfig = {
     output: 'export',
     images: {
       loader: 'custom',
-      loaderFile: './pages/api/custom-loader.ts',
+      path: 'https://res.cloudinary.com/dqcadja0y/image/upload/v1695025731/maciejpastuszak/',
     }
   }
    

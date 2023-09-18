@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
+import { CldImage } from 'next-cloudinary';
 
 interface StrengthProps {
   index: number,
@@ -37,7 +38,7 @@ const Strength: React.FC<StrengthProps> = ({index, icon, title, content}) => {
          border 
          border-transparent`}
         >
-            <Image 
+            <CldImage 
             src={icon}
             width={89} 
             height={82} 

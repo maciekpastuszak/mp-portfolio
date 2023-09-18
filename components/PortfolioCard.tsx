@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { slideIn } from '@/utils/motion';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
 
 
 type Props = {
@@ -30,7 +31,7 @@ const PortfolioCard = ({ webUrl, codeUrl, imgSrc, title, description }: Props) =
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >
-      <Image
+      <CldImage
         src={imgSrc}
         alt={title}
         fill={true}

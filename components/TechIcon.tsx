@@ -1,4 +1,5 @@
 import { Tooltip } from '@/utils/tooltip'
+import { CldImage } from 'next-cloudinary'
 import Image from 'next/image'
 import React from 'react'
 // import ReactTooltip from 'react-tooltip';
@@ -17,7 +18,7 @@ const TechIcon: React.FC<TechIconProps> = ({src, title}) => {
         data-effect="solid"
       > */}
       <Tooltip message={title}>
-        <Image 
+        <CldImage 
             src={src}
             alt={title}
             title={title}
