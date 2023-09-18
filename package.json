@@ -34,5 +34,11 @@
   },
   "devDependencies": {
     "@types/sharp": "^0.32.0"
-  }
+  },
+  "browser":{
+    "child_process": false,
+    "fs": false,
+    "path": false,
+    "os": false
+    }  
 }
