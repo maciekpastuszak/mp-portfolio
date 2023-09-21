@@ -71,7 +71,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-10">
         <video
           autoPlay
           loop
@@ -89,9 +89,9 @@ const Hero = () => {
        viewport={{ once: false, amount: 0.25 }}
       className="w-100 bg-primary-dark">
         {/* Hero header */}
-        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
+        <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue text-end">
           <div className="grid gap-y-3">
-            <p className="font-medium md:text-7xl text-4xl pb-2">
+            <p className="font-medium md:text-7xl text-4xl pb-2 z-20">
               {showFirstLine && (
               <Typewriter 
                 words={["Hello there!"]}
@@ -104,7 +104,7 @@ const Hero = () => {
             </p>
             {showSecondLine && (
               <>
-              <p className="font-normal md:text-5xl text-3xl pb-2">
+              <p className="font-normal md:text-5xl text-3xl pb-2 z-20">
               <Typewriter 
                 words={[`My name is`]}
                 cursor={showCursor2}
@@ -115,7 +115,7 @@ const Hero = () => {
               />
               {
                 showName && (
-                  <span className="text-accent-yellow-800">
+                  <span className="text-accent-yellow-800 z-20">
                     <Typewriter 
                     words={[` Maciek`]}
                     cursor={showCursor3}
@@ -133,7 +133,7 @@ const Hero = () => {
             )}
             {showThirdLine && (
               
-              <p className="font-light md:text-4xl text-2xl">
+              <p className="font-light md:text-4xl text-2xl z-20">
                 <Typewriter 
                 words={["I’m a "]}
                 cursor={showCursor4}
@@ -156,13 +156,12 @@ const Hero = () => {
                 </p> 
             )}
           </div>
-        </div>
 
-         {/* Link to ABOUT */}
+            {/* Link to ABOUT */}
 
         <motion.div 
         variants={fadeIn('up', 'tween', 5, 2)}
-        className="absolute md:left-16 left-12 bottom-10 md:bottom-0"
+        className="absolute md:left-16 left-12 bottom-10 md:bottom-0 z-20"
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {
@@ -174,7 +173,7 @@ const Hero = () => {
             <ScrollElement type={"chevron-bouncing"} text={"see more"} colorIcon={"#FFDF38"} colorText={"#fff"} />
           </a>
         </motion.div>
-
+        </div>
       </motion.div>
     </section>
   );
