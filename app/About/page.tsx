@@ -14,7 +14,7 @@ import { staggerContainer, fadeIn } from '@/utils/motion';
 const About = () => {
 
   return (
-    <section id="about" className="min-h-screen w-full py-8 bg-primary-dark gradient-aboutSection-top">
+    <section id="about" className="min-h-screen w-full pt-2 pb-8 bg-primary-dark gradient-aboutSection-top">
         <div className="relative inset-x-0 top-16 min-h-screen mx-auto w-5/6 flex items-start text-secondary-blue-300">
           <motion.div
             variants={staggerContainer()}
