@@ -91,7 +91,7 @@ const Hero = () => {
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue text-end">
           <div className="grid gap-y-3">
-            <p className="font-medium md:text-7xl text-4xl pb-2 z-20">
+            <p className="font-medium md:text-7xl text-5xl pb-2 z-20">
               {showFirstLine && (
               <Typewriter 
                 words={["Hello there!"]}
@@ -104,7 +104,7 @@ const Hero = () => {
             </p>
             {showSecondLine && (
               <>
-              <p className="font-normal md:text-5xl text-3xl pb-2 z-20">
+              <p className="font-normal md:text-5xl text-4xl pb-2 z-20">
               <Typewriter 
                 words={[`My name is`]}
                 cursor={showCursor2}
@@ -133,7 +133,7 @@ const Hero = () => {
             )}
             {showThirdLine && (
               
-              <p className="font-light md:text-4xl text-2xl z-20">
+              <p className="font-light md:text-4xl text-3xl z-20">
                 <Typewriter 
                 words={["I’m a "]}
                 cursor={showCursor4}
