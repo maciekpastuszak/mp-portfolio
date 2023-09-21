@@ -91,7 +91,7 @@ const Hero = () => {
         {/* Hero header */}
         <div className="min-h-screen mx-auto w-5/6 flex items-center justify-end text-secondary-blue-300 text-end">
           <div className="grid gap-y-3">
-            <p className="font-medium md:text-6xl text-4xl">
+            <p className="font-medium md:text-7xl text-4xl pb-2">
               {showFirstLine && (
               <Typewriter 
                 words={["Hello there!"]}
@@ -104,7 +104,7 @@ const Hero = () => {
             </p>
             {showSecondLine && (
               <>
-              <p className="font-normal md:text-4xl text-3xl">
+              <p className="font-normal md:text-5xl text-3xl pb-2">
               <Typewriter 
                 words={[`My name is`]}
                 cursor={showCursor2}
@@ -115,7 +115,7 @@ const Hero = () => {
               />
               {
                 showName && (
-                  <span className="text-accent-yellow">
+                  <span className="text-accent-yellow-800">
                     <Typewriter 
                     words={[` Maciek`]}
                     cursor={showCursor3}
@@ -133,7 +133,7 @@ const Hero = () => {
             )}
             {showThirdLine && (
               
-              <p className="font-light md:text-3xl text-2xl">
+              <p className="font-light md:text-4xl text-2xl">
                 <Typewriter 
                 words={["I’m a "]}
                 cursor={showCursor4}
@@ -162,7 +162,7 @@ const Hero = () => {
 
         <motion.div 
         variants={fadeIn('up', 'tween', 5, 2)}
-        className="absolute md:left-24 left-12"
+        className="absolute md:left-16 left-12 bottom-10 md:bottom-0"
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {
