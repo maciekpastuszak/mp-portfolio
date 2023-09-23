@@ -161,7 +161,7 @@ const Hero = () => {
 
         <motion.div 
         variants={fadeIn('up', 'tween', 5, 2)}
-        className="absolute md:left-16 left-12 bottom-5 md:bottom-0 z-20"
+        className="absolute md:left-16 left-12 md:bottom-0 bottom-2 z-20"
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {
