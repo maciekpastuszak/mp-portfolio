@@ -104,7 +104,7 @@ const Hero = () => {
             </p>
             {showSecondLine && (
               <>
-              <p className="font-normal md:text-5xl text-4xl pb-2 z-20">
+              <p className="font-normal md:text-5xl text-3xl pb-2 z-20">
               <Typewriter 
                 words={[`My name is`]}
                 cursor={showCursor2}
@@ -161,7 +161,7 @@ const Hero = () => {
 
         <motion.div 
         variants={fadeIn('up', 'tween', 5, 2)}
-        className="absolute md:left-16 left-12 bottom-10 md:bottom-0 z-20"
+        className="absolute md:left-16 left-12 bottom-5 md:bottom-0 z-20"
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {
