@@ -23,7 +23,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.25 }}
             className="flex flex-col w-full justify-center items-center">
 
-          <div className="flex text-center mb-5">
+          <div className="flex text-center md:mb-5 mb-0">
               <Header title="About me" />
             </div>
 
