@@ -7,9 +7,9 @@ import PortfolioCard from '@/components/PortfolioCard';
 const Portfolio = () => {
   return (
     <section id="portfolio" className="min-h-screen w-100 py-2 bg-primary-dark">
-      <div className="relative mx-auto py-12 flex flex-col justify-center items-center">
+      <div className="relative mx-auto md:py-12 pt-12 pb-2 flex flex-col justify-center items-center">
 
-        <div className="flex text-center mt-2 mb-4">
+        <div className="flex text-center md:mt-2 mt-0 mb-4">
             <Header title="Porfolio" />
         </div>
         
