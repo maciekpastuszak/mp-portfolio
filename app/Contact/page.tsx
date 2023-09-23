@@ -46,14 +46,14 @@ const Contact = () => {
             <Header title="Contact Me" />
         </div>
 
-      <div className="relative w-5/6 text-white flex flex-col mx-auto justify-end items-end"> 
+      <div className="relative w-5/6 text-white flex flex-col mx-auto justify-center items-center"> 
        
         <div className="grad-contactSection-rt" />
 
        <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
-            <p className="text-right text-secondary-blue text-4xl font-light">Let&apos;s get in touch!</p>
+            <p className="text-secondary-blue md:text-4xl text-2xl text-center font-light mx-auto">Let&apos;s get in touch!</p>
           </div>
           <div className="w-full flex flex-col mb-4">
             <label htmlFor="name" className="font-thin">name</label>
