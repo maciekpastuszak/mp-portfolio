@@ -49,7 +49,14 @@ const Contact = () => {
             <Header title="Contact Me" />
         </div>
 
-      <div className="relative w-5/6 text-white flex flex-col mx-auto justify-center items-center"> 
+      <div className="relative w-5/6 text-white flex flex-row mx-auto justify-center items-center"> 
+       
+      <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        >
+          <EarthCanvas />
+       </motion.div>
        
         <div className="grad-contactSection-rt" />
 
@@ -94,12 +101,7 @@ const Contact = () => {
           </div>
           <button type="submit" disabled={loading} className="w-[127px] h-[44px] shrink-0 disabled:bg-gray-400 disabled:text-gray-100 rounded-xl border-2 border-accent-yellow-800 hover:bg-accent-yellow-800 hover:text-primary-dark-800">send</button>
        </form>
-       <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
-          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-        >
-          <EarthCanvas />
-        </motion.div>
+
        <div className="grad-contactSection-lb" />
        
       </div>
