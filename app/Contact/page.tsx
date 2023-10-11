@@ -1,9 +1,10 @@
 "use client"
 
 import Header from '@/components/Header';
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import EarthCanvas from '@/components/canvas/Earth';
+import { slideIn } from '@/utils/motion';
 
 const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
@@ -93,7 +94,12 @@ const Contact = () => {
           </div>
           <button type="submit" disabled={loading} className="w-[127px] h-[44px] shrink-0 disabled:bg-gray-400 disabled:text-gray-100 rounded-xl border-2 border-accent-yellow-800 hover:bg-accent-yellow-800 hover:text-primary-dark-800">send</button>
        </form>
-
+       <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        >
+          <EarthCanvas />
+        </motion.div>
        <div className="grad-contactSection-lb" />
        
       </div>
