@@ -1,7 +1,9 @@
 "use client"
 
 import Header from '@/components/Header';
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import { motion } from 'framer-motion';
+import { EarthCanvas } from './canvas';
 
 const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
