@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="relative mx-auto md:py-12 pt-12 pb-2 flex flex-col justify-center items-center">
 
         <div className="flex text-center md:mt-2 mt-0 mb-4">
-            <Header title="Porfolio" />
+            <Header title="Portfolio" />
         </div>
         
         <div className="grad-portfolioSection-rc z-0" />
