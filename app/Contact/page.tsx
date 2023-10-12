@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full md:min-h-screen bg-primary-dark md:mb-2 mb-10">
         
-      <div className="flex justify-center md:mt-2 mb-4 pt-5">
+      <div className="flex justify-center md:mt-10 mb-1 pt-4 md:pt-14">
           <Header title="Contact Me" />
       </div>
 

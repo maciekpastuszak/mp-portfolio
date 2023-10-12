@@ -43,7 +43,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Portfolio />
-      <div>
+      <div className="relative z-0">
         <Contact />
         <Stars />
       </div>
