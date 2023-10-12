@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import EarthCanvas from '@/components/canvas/Earth';
-import { slideIn } from '@/utils/motion';
+import { fadeIn } from '@/utils/motion';
 
 const inputStyle = "ps-3 mt-1 text-primary-dark-800 text-lg bg-[#D9D9D9] rounded-lg border border-[#F5F5F5] shadow-innerV2";
 
@@ -43,24 +43,30 @@ const Contact = () => {
       setLoading(false);
     }
   }
+
   return (
     <section id="contact" className="w-full md:min-h-screen bg-primary-dark md:mb-2 mb-10">
-        <div className="flex justify-center md:mt-2 mb-4 pt-5">
-            <Header title="Contact Me" />
-        </div>
+        
+      <div className="flex justify-center md:mt-2 mb-4 pt-5">
+          <Header title="Contact Me" />
+      </div>
 
-      <div className="relative w-5/6 text-white flex flex-row mx-auto justify-center items-center"> 
+      <div className="relative w-5/6 text-white flex md:flex-row flex-col mx-auto justify-center items-center"> 
        
-      <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.2, 1)}
           className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
         >
           <EarthCanvas />
        </motion.div>
        
-        <div className="grad-contactSection-rt" />
+        {/* <div className="grad-contactSection-rt" /> */}
 
-       <form action="post" onSubmit={handleSubmit} className="w-5/6 sm:w-2/3 lg:w-2/5">
+       <motion.form 
+        variants={fadeIn('right', 'tween', 0.2, 1)}
+        action="post" 
+        onSubmit={handleSubmit} 
+        className="w-5/6 sm:w-2/3 lg:w-2/5">
 
           <div className="my-5 flex">
             <p className="text-secondary-blue md:text-4xl text-2xl text-center font-light mx-auto">Let&apos;s get in touch!</p>
@@ -100,9 +106,9 @@ const Contact = () => {
               required/>
           </div>
           <button type="submit" disabled={loading} className="w-[127px] h-[44px] shrink-0 disabled:bg-gray-400 disabled:text-gray-100 rounded-xl border-2 border-accent-yellow-800 hover:bg-accent-yellow-800 hover:text-primary-dark-800">send</button>
-       </form>
+       </motion.form>
 
-       <div className="grad-contactSection-lb" />
+       {/* <div className="grad-contactSection-lb" /> */}
        
       </div>
   </section>
