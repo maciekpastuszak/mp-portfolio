@@ -8,7 +8,7 @@ import Portfolio from '@/app/Portfolio/page';
 import Contact from '@/app/Contact/page';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Stars from '@/components/canvas/Stars'
+import StarsCanvas from '@/components/canvas/Stars'
 import { SelectedPage } from '@/shared/types';
 
 
@@ -45,7 +45,7 @@ const HomePage = () => {
       <Portfolio />
       <div className="relative z-0">
         <Contact />
-        <Stars />
+        <StarsCanvas />
       </div>
       <Footer />
     </div>

@@ -4,10 +4,18 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Stars = () => {
+const Stars = (props) => {
   return (
     <div>Stars</div>
   )
 }
 
-export default Stars
+const StarsCanvas = () => {
+  return (
+    <div>
+
+    </div>
+  )
+}
+
+export default StarsCanvas
