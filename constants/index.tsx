@@ -86,6 +86,10 @@ export const techIcons = [
     title: 'Solidity'
   },
   {
+    src: '/icon-mysql.svg',
+    title: 'MySQL'
+  },
+  {
     src: '/icon-tailwind.svg',
     title: 'TailwindCSS'
   },
