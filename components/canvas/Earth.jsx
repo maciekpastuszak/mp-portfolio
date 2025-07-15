@@ -9,18 +9,19 @@ const Earth = () => {
 
   return (
     <primitive 
-    object={earth.scene} 
-    scale={2.0} 
-    position-y={0}
-    rotation-y={0} />
+      object={earth.scene} 
+      scale={2.0} 
+      position-y={0}
+      rotation-y={0} 
+    />
   );
-}
+};
 
 const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
@@ -30,17 +31,17 @@ const EarthCanvas = () => {
       }}
       className="h-500"
     >
-       <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-            autoRotate
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <Earth />
-       </Suspense>
+          autoRotate
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Earth />
+      </Suspense>
     </Canvas>
-  )
-}
+  );
+};
 
-export default EarthCanvas
+export default EarthCanvas;
