@@ -121,6 +121,13 @@ export const techIcons = [
 
 export const portfolioItems = [
   {
+    webUrl: "https://audiotour.pl",
+    codeUrl: "https://github.com/maciekpastuszak/audiotour",
+    imgSrc: "/screen_audiotour.jpg",
+    title: "Audiotour",
+    description: "Audioguides and apps for visiting museums and cities",
+  },
+  {
     webUrl: "https://karolinapastuszak.pl",
     codeUrl: "https://github.com/maciekpastuszak/karolina-photo",
     imgSrc: "/screen_karolina_photo.jpg",
