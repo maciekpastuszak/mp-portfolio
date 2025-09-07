@@ -8,8 +8,9 @@ import { CgMenuHotdog } from "react-icons/cg";
 import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
+import Link from "next/link";
 
-import { navVariants } from '../utils/motion';
+import { navVariants } from "../utils/motion";
 
 type Props = {
   isTopOfPage: boolean;
@@ -23,26 +24,27 @@ const navBackground =
 const variants = {
   slideIn: { x: -200, ease: "easeIn", duration: 0.3 },
   slideOut: { x: 200, ease: "easeIn", duration: 0.3 },
-}
+};
 
-
-const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "" : `md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-20`;
+  const navbarBackground = isTopOfPage
+    ? ""
+    : `md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-20`;
 
   return (
-    <motion.nav 
+    <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}>
+      className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}
+    >
       <div className="mx-auto w-5/6 md:flex hidden items-center justify-between">
-
         {/* HOME */}
         <div className="relative text-secondary-blue hover:drop-shadow-md cursor-pointer w-[82px]">
-          <a href="/#hero">
+          <Link href="/#hero">
             <BiHomeAlt2 size={27} />
-          </a>
+          </Link>
           {selectedPage == "hero" ? (
             <div className="flex absolute top-8 left-0 w-full justify-start">
               <hr className="border-accent-yellow w-1/3" />
@@ -55,11 +57,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         {/* NAV LINKS */}
         <div className="flex items-center justify-between gap-8">
           {navLinks.map((link, index) => (
-            <NavItem 
-              key={index} 
-              href={link.href} 
+            <NavItem
+              key={index}
+              href={link.href}
               label={link.text}
-              page={link.text} 
+              page={link.text}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -70,22 +72,36 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="flex items-center justify-between gap-8">
           <ul className="flex flex-row">
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <a href="https://github.com/maciekpastuszak" target="_blank" rel="noopener noreferrer"><BsGithub size={25} /></a>
+              <Link
+                href="https://github.com/maciekpastuszak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsGithub size={25} />
+              </Link>
             </li>
             <li className="text-secondary-blue ps-4 hover:drop-shadow-md cursor-pointer">
-              <a href="https://www.linkedin.com/in/mpastuszak/" target="_blank" rel="noopener noreferrer"><BsLinkedin size={25} /></a>
+              <Link
+                href="https://www.linkedin.com/in/mpastuszak/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsLinkedin size={25} />
+              </Link>
             </li>
           </ul>
         </div>
       </div>
 
       {/* BURGER */}
-      <motion.div 
-         animate={`${toggleMenu ? "slideIn" : ""}`}
-         variants={variants}
-         className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl right-0`}
+      <motion.div
+        animate={`${toggleMenu ? "slideIn" : ""}`}
+        variants={variants}
+        className={`${navBackground} md:hidden fixed top-6 w-16 p-5 rounded-l-3xl right-0`}
       >
-        <div className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}>
+        <div
+          className={`absolute top-0 left-2.5 mt-0.5 z-10 text-secondary-blue cursor-pointer`}
+        >
           <CgMenuHotdog size={34} onClick={() => setToggleMenu(!toggleMenu)} />
         </div>
       </motion.div>
@@ -95,9 +111,9 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="text-secondary-blue items-center cursor-pointer">
           {toggleMenu && (
             <motion.div
-            animate="slideIn"
-            exit="slideOut"
-            variants={variants}
+              animate="slideIn"
+              exit="slideOut"
+              variants={variants}
               className={`
                      
                         ${navBackground}
@@ -110,20 +126,38 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                       `}
             >
               <div className="flex flex-col items-center gap-6 mt-8">
-              <a href="/#hero">
-                <BiHomeAlt2 size={27} />
-              </a>
-              {navLinks.map((link, index) => (
-                <NavItem key={index} href={link.href} label={link.text} page={link.text} selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}/>
-              ))}
+                <Link href="/#hero">
+                  <BiHomeAlt2 size={27} />
+                </Link>
+                {navLinks.map((link, index) => (
+                  <NavItem
+                    key={index}
+                    href={link.href}
+                    label={link.text}
+                    page={link.text}
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                ))}
               </div>
               <ul className="flex flex-col items-center my-8 gap-4">
                 <li className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
-                  <a href="https://github.com/maciekpastuszak" target="_blank" rel="noopener noreferrer"><BsGithub size={25} /></a>
+                  <Link
+                    href="https://github.com/maciekpastuszak"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsGithub size={25} />
+                  </Link>
                 </li>
                 <li className="text-secondary-blue hover:drop-shadow-md cursor-pointer">
-                  <a href="https://www.linkedin.com/in/mpastuszak/" target="_blank" rel="noopener noreferrer"><BsLinkedin size={25} /></a>
+                  <Link
+                    href="https://www.linkedin.com/in/mpastuszak/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsLinkedin size={25} />
+                  </Link>
                 </li>
               </ul>
             </motion.div>
