@@ -9,6 +9,7 @@ import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
 import Link from "next/link";
+import { fadeIn } from "../utils/motion";
 
 import { navVariants } from "../utils/motion";
 
@@ -34,7 +35,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
   return (
     <motion.nav
-      variants={navVariants}
+      variants={fadeIn("right", "tween", 0.2, 1)}
       initial="hidden"
       whileInView="show"
       className={`${navbarBackground} fixed top-0 z-30 w-full py-5`}

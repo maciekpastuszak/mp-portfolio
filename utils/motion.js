@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export const navVariants = {
     hidden: {
       opacity: 0,
@@ -46,23 +48,28 @@ export const navVariants = {
     },
   });
 
-  export const fadeIn = (direction, type, delay, duration) => ({
-    hidden: {
-      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-      opacity: 0,
+  /**
+ * @param {"up" | "down" | "left" | "right"} direction
+ * @param {string} type
+ * @param {number} delay
+ * @param {number} duration
+ * @returns {import("framer-motion").Variants}
+ */
+export const fadeIn = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
+    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: "easeOut",
     },
-    show: {
-      x: 0,
-      y: 0,
-      opacity: 1,
-      transition: {
-        type,
-        delay,
-        duration,
-        ease: 'easeOut',
-      },
-    },
-  });
-  
-  
+  },
+});
