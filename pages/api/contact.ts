@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import nodemailer from 'nodemailer';
+import { NextApiRequest, NextApiResponse } from "next";
+import nodemailer from "nodemailer";
 
 interface RequestBody {
   name: string;
@@ -11,7 +11,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== 'POST') {
+  if (req.method !== "POST") {
     return res.status(405).end();
   }
 
@@ -26,9 +26,7 @@ export default async function handler(
   };
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp-mail.outlook.com',
-    port: 587,
-    secure: false,
+    service: "hotmail",
     auth: {
       user: process.env.user,
       pass: process.env.pass,
@@ -48,16 +46,14 @@ export default async function handler(
       `,
     });
 
-    console.log('Message sent:', mail.messageId);
+    console.log("Message sent:", mail.messageId);
 
-    return res.status(200).json({ message: 'success' });
-
+    return res.status(200).json({ message: "success" });
   } catch (error) {
-
     console.error(error);
 
     return res.status(500).json({
-      message: 'Could not send the email. Your message was not sent',
+      message: "Could not send the email. Your message was not sent",
     });
   }
 }
