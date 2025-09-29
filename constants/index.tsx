@@ -200,14 +200,14 @@ export const portfolioItems = [
       "A 3D shirt customizer app using threejs and react-three-fiber",
   },
   {
-    webUrl: "https://gpt3.maciejpastuszak.pl/",
+    webUrl: "https://gpt3-technology.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/GPT3-Technology",
     imgSrc: "/screen_gpt3.jpg",
     title: "GPT-3 Technology",
     description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS",
   },
   {
-    webUrl: "https://hoobank.maciejpastuszak.pl/",
+    webUrl: "https://hoo-bank.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/bank_modern_app",
     imgSrc: "/screen_hoobank.jpg",
     title: "Hoo Bank",
@@ -221,7 +221,7 @@ export const portfolioItems = [
     description: "A modern and elegant UI/UX design for a metaverse company",
   },
   {
-    webUrl: "https://twitter-clone-5gxphh679-maciekpastuszak.vercel.app/",
+    webUrl: "https://twitter-clone.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/twitter-clone",
     imgSrc: "/screen_twitter.jpg",
     title: "Twitter Clone",
@@ -274,7 +274,7 @@ export const portfolioItems = [
   //   description: ""
   // },
   {
-    webUrl: "https://hangman.maciejpastuszak.pl/",
+    webUrl: "https://react-hangman.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/React-Hangman",
     imgSrc: "/screen_hangman.jpg",
     title: "React Hangman",
