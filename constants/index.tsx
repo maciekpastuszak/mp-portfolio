@@ -149,7 +149,7 @@ export const portfolioItems = [
     description: "A fun figma-like app, but in Silesian dialect",
   },
   {
-    webUrl: "https://yelpcamp.maciejpastuszak.pl/",
+    webUrl: "https://yelp-camp.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/YelpCamp",
     imgSrc: "/screen_yelpcamp.jpg",
     title: "YelpCamp",
