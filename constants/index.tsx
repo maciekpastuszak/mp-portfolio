@@ -128,25 +128,47 @@ export const portfolioItems = [
     description: "Audioguides and apps for visiting museums and cities",
   },
   {
-    webUrl: "https://karolinapastuszak.pl",
+    webUrl: "https://dobrawrozka.edu.pl",
+    codeUrl: "https://github.com/maciekpastuszak/dobrawrozkav3",
+    imgSrc: "/screen_dobra_wrozka.jpg",
+    title: "Dobra Wrózka",
+    description: "A kindergarten website",
+  },
+  {
+    webUrl: "https://karolina-photo.maciejpastuszak.pl",
     codeUrl: "https://github.com/maciekpastuszak/karolina-photo",
     imgSrc: "/screen_karolina_photo.jpg",
     title: "Karolina Photography",
     description: "A porfolio website of a family photographer",
   },
   {
-    webUrl: "https://dobrawrozka.edu.pl",
-    codeUrl: "https://github.com/maciekpastuszak/dobra-wrozka-v2",
-    imgSrc: "/screen_dobra_wrozka.jpg",
-    title: "Dobra Wrózka",
-    description: "A kindergarten website",
+    webUrl: "https://figmo.maciejpastuszak.pl",
+    codeUrl: "https://github.com/maciekpastuszak/figmo",
+    imgSrc: "/screen_figmo.jpg",
+    title: "Figmo",
+    description: "A fun figma-like app, but in Silesian dialect",
   },
   {
-    webUrl: "http://evo-gym.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/gym-typescript",
-    imgSrc: "/screen_evo_gym.jpg",
-    title: "Evo Gym",
-    description: "A modern and elegant UI/UX fitness center front page",
+    webUrl: "https://yelpcamp.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/YelpCamp",
+    imgSrc: "/screen_yelpcamp.jpg",
+    title: "YelpCamp",
+    description: "My first Web Developer Bootcamp application",
+  },
+  {
+    webUrl: "https://krypt.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/Krypt",
+    imgSrc: "/screen_krypt.jpg",
+    title: "Krypt",
+    description:
+      "A Web3.0/Ethereum blockchain app for cryptocurrency transfer.",
+  },
+  {
+    webUrl: "https://palette-find.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/color-palette-generator",
+    imgSrc: "/screen_color_find.jpg",
+    title: "PaletteFind",
+    description: "A color palette generator usign OpenAI",
   },
   {
     webUrl: "https://gericht-restaurant.maciejpastuszak.pl/",
@@ -156,11 +178,47 @@ export const portfolioItems = [
     description: "A beautiful and modern restaurant front page",
   },
   {
+    webUrl: "http://evo-gym.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/gym-typescript",
+    imgSrc: "/screen_evo_gym.jpg",
+    title: "Evo Gym",
+    description: "A modern and elegant UI/UX fitness center front page",
+  },
+  {
+    webUrl: "https://promptopia.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/promptopia",
+    imgSrc: "/screen_promptopia.jpg",
+    title: "Promptopia",
+    description: "A reliable OpenAI prompts sharing platform",
+  },
+  {
+    webUrl: "https://threejs-shirt-design.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/threejs",
+    imgSrc: "/screen_threejs.jpg",
+    title: "Shirt Designer (threejs)",
+    description:
+      "A 3D shirt customizer app using threejs and react-three-fiber",
+  },
+  {
     webUrl: "https://gpt3.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/GPT3-Technology",
     imgSrc: "/screen_gpt3.jpg",
     title: "GPT-3 Technology",
     description: "Modern UI/UX GPT-3 landing page based on react with BEM CSS",
+  },
+  {
+    webUrl: "https://hoobank.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/bank_modern_app",
+    imgSrc: "/screen_hoobank.jpg",
+    title: "Hoo Bank",
+    description: "a modern and elegant UI/UX business front page",
+  },
+  {
+    webUrl: "https://metaversus.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/metaversus",
+    imgSrc: "/screen_metaversus.jpg",
+    title: "Metaversus",
+    description: "A modern and elegant UI/UX design for a metaverse company",
   },
   {
     webUrl: "https://twitter-clone-5gxphh679-maciekpastuszak.vercel.app/",
@@ -169,6 +227,14 @@ export const portfolioItems = [
     title: "Twitter Clone",
     description:
       "A Twitter clone using React, Next.js, TailwindCSS, Prisma and mongoDB",
+  },
+  {
+    webUrl: "http://hilink.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/travel_app",
+    imgSrc: "/screen_hilink.jpg",
+    title: "Hilink",
+    description:
+      "A travel agency front page with modern and elegant UI/UX design",
   },
   {
     webUrl: "http://dallee.maciejpastuszak.pl/",
@@ -194,13 +260,6 @@ export const portfolioItems = [
   //   description: ""
   // },
   {
-    webUrl: "https://promptopia.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/promptopia",
-    imgSrc: "/screen_promptopia.jpg",
-    title: "Promptopia",
-    description: "A reliable OpenAI prompts sharing platform",
-  },
-  {
     webUrl: "https://spotifyAI.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/SpotifyAI",
     imgSrc: "/screen_spotifyai.jpg",
@@ -215,28 +274,6 @@ export const portfolioItems = [
   //   description: ""
   // },
   {
-    webUrl: "https://color-find.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/color-palette-generator",
-    imgSrc: "/screen_color_find.jpg",
-    title: "ColorFind",
-    description: "A color palette generator usign OpenAi",
-  },
-  {
-    webUrl: "https://krypt.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/Krypt",
-    imgSrc: "/screen_krypt.jpg",
-    title: "Krypt",
-    description:
-      "A Web3.0/Ethereum blockchain app for cryptocurrency transfer.",
-  },
-  {
-    webUrl: "https://yelpcamp.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/YelpCamp",
-    imgSrc: "/screen_yelpcamp.jpg",
-    title: "YelpCamp",
-    description: "My first Web Developer Bootcamp application",
-  },
-  {
     webUrl: "https://hangman.maciejpastuszak.pl/",
     codeUrl: "https://github.com/maciekpastuszak/React-Hangman",
     imgSrc: "/screen_hangman.jpg",
@@ -245,11 +282,12 @@ export const portfolioItems = [
       "A simple react-typescript app based on a popular children game",
   },
   {
-    webUrl: "https://hoobank.maciejpastuszak.pl/",
-    codeUrl: "https://github.com/maciekpastuszak/bank_modern_app",
-    imgSrc: "/screen_hoobank.jpg",
-    title: "Hoo Bank",
-    description: "a modern and elegant UI/UX business front page",
+    webUrl: "https://erbnb.maciejpastuszak.pl/",
+    codeUrl: "https://github.com/maciekpastuszak/erbnb",
+    imgSrc: "/screen_erbnb.jpg",
+    title: "ErBnb",
+    description:
+      "An Airbnb clone using React, Next.js, TailwindCSS and mongoDB",
   },
   // {
   //   webUrl: 'https://dsurv.maciejpastuszak.pl/',
